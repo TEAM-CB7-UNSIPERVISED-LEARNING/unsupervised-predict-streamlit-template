@@ -97,7 +97,11 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
 
-
+    if page_selection("thembani maswengani")
+        #team name
+        st.info("team CB7")
+        #team mates names name
+        st.markdown("thembani maswengani")
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
@@ -108,7 +112,7 @@ def main():
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
     # Building Team Page
-    if page_selection  == "Team":
+    if page_selection == "Team":
         #Team name
         st.info("Team CB7")
         #team mates names
