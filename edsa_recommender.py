@@ -128,6 +128,7 @@ def main():
     #imformation
     if page_selection == "Imformation":
         st.write("In today’s technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, EDSA is challenging you to construct a recommendation algorithm based on content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed, based on their historical preferences.  ")
+        st.image("https://images.app.goo.gl/1jCmsyKdCLhkgp3a6")
 
     
 if __name__ == '__main__':
