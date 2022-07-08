@@ -125,6 +125,13 @@ def main():
         st.write("EXPLONATORY DATA ANALYSIS")
         st.image("https://st3.depositphotos.com/3116407/15347/i/950/depositphotos_153476170-stock-photo-data-analysis-concept-on-a.jpg")
 
-
+    page_bg_img = '''
+<style>
+body {
+background-image: url("https://tcrn.ch/3iBku17");
+background-size: cover;
+}
+</style>
+'''
 if __name__ == '__main__':
     main()
