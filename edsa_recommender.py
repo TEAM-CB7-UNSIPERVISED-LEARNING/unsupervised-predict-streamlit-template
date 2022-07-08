@@ -125,13 +125,6 @@ def main():
         st.write("EXPLONATORY DATA ANALYSIS")
         st.image("https://st3.depositphotos.com/3116407/15347/i/950/depositphotos_153476170-stock-photo-data-analysis-concept-on-a.jpg")
 
-    page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.bing.com/images/search?view=detailv2&form=SBIHVR&iss=sbi&q=imgurl:https%3A%2F%2Ftechcrunch.com%2Fwp-content%2Fuploads%2F2021%2F10%2FGettyImages-1165220714.jpg%3Fw%3D711&pageurl=https%3A%2F%2Ftechcrunch.com%2F2021%2F10%2F05%2Fstreamlit-reaches-1-0-milestone-for-open-source-data-app-building-tool%2F&pagetl=Streamlit+reaches+1.0+milestone+for+open+source+data+app+building+tool+%E2%80%93+TechCrunch&imgsz=712x400&selectedindex=7&id=https%3A%2F%2Fak8.picdn.net%2Fshutterstock%2Fvideos%2F2996629%2Fthumb%2F1.jpg&ccid=qnV7bBZ6&mediaurl=https%3A%2F%2Fak8.picdn.net%2Fshutterstock%2Fvideos%2F2996629%2Fthumb%2F1.jpg&exph=480&expw=852&vt=2&simid=608055988107092185&ck=3EFB9FE1B1D0E41FCEA90AA0A5430ED0&thid=OIP.qnV7bBZ6PIe1RtDKAEVb4QHaEL&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.aa757b6c167a3c87b546d0ca00455be1%3Frik%3DOzKI7fsBKlutCA%26pid%3DImgRaw%26r%3D0&sim=15,16");
-background-size: cover;
-}
-</style>
-'''
+    
 if __name__ == '__main__':
     main()
