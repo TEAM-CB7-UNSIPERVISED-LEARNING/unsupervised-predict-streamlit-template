@@ -120,6 +120,11 @@ def main():
         st.write("Sydney Abrahams")
         st.write("MR easy gym")
         st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
+    #EDA
+    if page_selection == "Data analysis":
+        st.write("EXPLONATORY DATA ANALYSIS")
+        st.image("https://st3.depositphotos.com/3116407/15347/i/950/depositphotos_153476170-stock-photo-data-analysis-concept-on-a.jpg")
+
 
 if __name__ == '__main__':
     main()
