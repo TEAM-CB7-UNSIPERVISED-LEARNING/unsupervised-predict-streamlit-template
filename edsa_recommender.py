@@ -26,6 +26,7 @@
 
 """
 # Streamlit dependencies
+import select
 import streamlit as st
 
 # Data handling dependencies
@@ -106,7 +107,17 @@ def main():
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
-
+    # Building Team Page
+    if page_selection  == "Team":
+        #Team name
+        st.info("Team CB7")
+        #team mates names
+        st.markdown("Thembani maswengani - Team Learder")
+        st.markdown("Katlego Maponya -Team Coordinator")
+        st.markdown("Keabetswe sebanyoni")
+        st.markdown("Charmain Nhlapho")
+        st.markdown("Sydney Abrahams")
+        st.markdown("MR easy gym")
 
 if __name__ == '__main__':
     main()
