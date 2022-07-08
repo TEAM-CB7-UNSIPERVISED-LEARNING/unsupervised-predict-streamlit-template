@@ -135,7 +135,7 @@ def main():
     #Contuct Deteils
     if page_selection =="contuct us@":
         st.write("contuct us @TeamCB7@gmail.com or Call us - 0897765437")
-        st.image("https://media.istockphoto.com/photos/contact-us-picture-id1049658692")
+        st.image("https://media.istockphoto.com/photos/closeup-image-of-woman-hands-using-smartphone-with-icon-telephone-picture-id1257143766?s=612x612")
 
     
 if __name__ == '__main__':
