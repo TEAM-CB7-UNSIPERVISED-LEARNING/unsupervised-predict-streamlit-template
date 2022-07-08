@@ -116,10 +116,10 @@ def main():
         #team mates names
         st.write("Thembani maswengani - Team Learder -email t.maswanganyi101@gmail.com ")
         st.write("Katlego Maponya -Team Coordinator -email mr015khai@gmail.com")
-        st.write("Keabetswe sebanyoni               email Keamogetswe.Sibanyoni@fnb.co.za ")
-        st.write("Charmain Nhlapho                  email Charmainlindelwa@gmail.com")
-        st.write("Sydney Abrahams                   email sidneyabrahamsrsa@gmail.com")
-        st.write("MR easy gym                       email bethuelmas94@gmail.com")
+        st.write("Keabetswe sebanyoni  - email Keamogetswe.Sibanyoni@fnb.co.za ")
+        st.write("Charmain Nhlapho     - email Charmainlindelwa@gmail.com")
+        st.write("Sydney Abrahams      - email sidneyabrahamsrsa@gmail.com")
+        st.write("MR easy gym          - email bethuelmas94@gmail.com")
         st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
         
     #EDA
