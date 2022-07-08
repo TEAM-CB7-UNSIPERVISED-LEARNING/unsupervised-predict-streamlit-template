@@ -119,6 +119,7 @@ def main():
         st.write("Charmain Nhlapho")
         st.write("Sydney Abrahams")
         st.write("MR easy gym")
+        st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
 
 if __name__ == '__main__':
     main()
