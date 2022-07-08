@@ -105,6 +105,7 @@ def main():
         st.title("Solution Overview")
         st.write("Describe your winning approach on this page")
         st.write("we build this app look for movies using filtering and contend basesd algorythms")
+        st.image("https://www.naukri.com/learning/articles/movie-recommendation-system-using-machine-learning/")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
