@@ -135,14 +135,14 @@ def main():
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
     #Contuct Deteils
     if page_selection =="Contuct us@":
-        st.write("contuct Details")
+        st.write("Contuct Details")
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
         st.write("Mail")
         st.write("facebook")
         st.write("Tweeter")
         st.write("whatsap")
-        st.image("https://www.clipartmax.com/png/middle/264-2649962_press-contact-png-icon-telephone.png")
         st.write("mobile")
+        st.image("https://pixabay.com/images/search/contact%20us/")
 
     
 if __name__ == '__main__':
