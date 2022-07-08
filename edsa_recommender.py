@@ -133,7 +133,7 @@ def main():
         #Image
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
     #Contuct Deteils
-    if page_selection("contuct us@"):
+    if page_selection =="contuct us@":
         st.write("contuct us @TeamCB7@gmail.com or Call us - 0897765437")
         st.image("https://media.istockphoto.com/photos/contact-us-picture-id1049658692")
 
