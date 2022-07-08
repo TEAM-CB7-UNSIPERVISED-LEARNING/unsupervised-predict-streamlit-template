@@ -97,7 +97,7 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
 
-        
+
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
@@ -110,14 +110,14 @@ def main():
     # Building Team Page
     if page_selection == "Team":
         #Team name
-        st.info("Team CB7")
+        st.title("Team CB7")
         #team mates names
-        st.markdown("Thembani maswengani - Team Learder")
-        st.markdown("Katlego Maponya -Team Coordinator")
-        st.markdown("Keabetswe sebanyoni")
-        st.markdown("Charmain Nhlapho")
-        st.markdown("Sydney Abrahams")
-        st.markdown("MR easy gym")
+        st.write("Thembani maswengani - Team Learder")
+        st.write("Katlego Maponya -Team Coordinator")
+        st.write("Keabetswe sebanyoni")
+        st.write("Charmain Nhlapho")
+        st.write("Sydney Abrahams")
+        st.write("MR easy gym")
 
 if __name__ == '__main__':
     main()
