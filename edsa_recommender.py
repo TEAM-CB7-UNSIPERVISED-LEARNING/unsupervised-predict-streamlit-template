@@ -46,7 +46,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "contuct us@"]
+    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "contuct us@","Imformation"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -120,10 +120,14 @@ def main():
         st.write("Sydney Abrahams")
         st.write("MR easy gym")
         st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
+        
     #EDA
     if page_selection == "Data analysis":
         st.write("EXPLONATORY DATA ANALYSIS")
         st.image("https://st3.depositphotos.com/3116407/15347/i/950/depositphotos_153476170-stock-photo-data-analysis-concept-on-a.jpg")
+    #imformation
+    if page_selection == "Imformation":
+        st.write("In today’s technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options.")
 
     
 if __name__ == '__main__':
