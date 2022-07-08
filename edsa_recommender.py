@@ -114,8 +114,8 @@ def main():
         #Team name
         st.title("Team CB7")
         #team mates names
-        st.write("Thembani maswengani - Team Learder email t.maswanganyi101@gmail.com ")
-        st.write("Katlego Maponya -Team Coordinator email mr015khai@gmail.com")
+        st.write("Thembani maswengani - Team Learder -email t.maswanganyi101@gmail.com ")
+        st.write("Katlego Maponya -Team Coordinator -email mr015khai@gmail.com")
         st.write("Keabetswe sebanyoni               email Keamogetswe.Sibanyoni@fnb.co.za ")
         st.write("Charmain Nhlapho                  email Charmainlindelwa@gmail.com")
         st.write("Sydney Abrahams                   email sidneyabrahamsrsa@gmail.com")
