@@ -97,7 +97,7 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
 
-    if page_selection("thembani maswengani")
+    if page_selection("team")
         #team name
         st.info("team CB7")
         #team mates names name
