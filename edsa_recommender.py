@@ -46,7 +46,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "contuct us@","Imformation"]
+    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "Contuct us@","Imformation"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -134,9 +134,14 @@ def main():
         #Image
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
     #Contuct Deteils
-    if page_selection =="contuct us@":
+    if page_selection =="Contuct us@":
         st.write("contuct us @TeamCB7@gmail.com or Call us - 0897765437")
         st.image("https://media.istockphoto.com/photos/closeup-image-of-woman-hands-using-smartphone-with-icon-telephone-picture-id1257143766?s=612x612")
+        st.write("Mail")
+        st.write("facebook")
+        st.write("Tweeter")
+        st.write("whatsap")
+        st.write("mobile")
 
     
 if __name__ == '__main__':
