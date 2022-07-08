@@ -104,6 +104,7 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("Describe your winning approach on this page")
+        st.write("we build this app look for movies using filtering and contend basesd algorythms")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
