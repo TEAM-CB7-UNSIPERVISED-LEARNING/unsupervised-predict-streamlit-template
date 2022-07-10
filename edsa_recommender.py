@@ -147,6 +147,10 @@ def main():
         st.write("whatsap")
         st.write("mobile")
         st.image("https://pixabay.com/images/search/contact%20us/")
+    #dataset page
+    if page_selection == "Datasets":
+        st.write("genome_scores.csv","genome_tags.csv","imdb_data_csv","links.csv","movies.csv","tags.csv","test.csv","train.csv")
+    
 
     
 if __name__ == '__main__':
