@@ -171,7 +171,7 @@ def main():
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
-        st.image("https://www.inter-contact.de/en/blog/consistent-corporate-terminology-in-every-language")
+        st.image("https://www.termcoord.eu/wp-content/uploads/2021/08/Multilingual-digital-terminology-today.png")
         if st.checkbox("checkbox"):
             st.write(" contend based filtereing ")
             st.write("collabarative filtereing")
