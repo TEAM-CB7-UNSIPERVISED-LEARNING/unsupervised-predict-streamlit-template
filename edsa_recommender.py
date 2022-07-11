@@ -176,9 +176,9 @@ def main():
         st.write("Glossary of words used that need further explanations")
         st.image("https://www.termcoord.eu/wp-content/uploads/2021/08/Multilingual-digital-terminology-today.png")
         if st.checkbox("checkbox"):
-            st.write(" contend based filtereing ")
-            st.write("collabarative filtereing")
-            st.write("Item based filtering")
+            st.write(" contend based filtereing - it item data focused")
+            st.write("collabarative filtereing - user data focused")
+            st.write("Hybrid Recommendations - uses both item data and user data")
             
     #feedback page
     if page_selection == "feedback":
@@ -187,7 +187,7 @@ def main():
         st.write ("feedback")
         st.text_area("Enter text below","enter your sentence/Enter your feedback")
         st.info('thank you for your feeback')
-        option = st.radio("sselect a Response",("Posetive","Negative","Moderate"))
+        option = st.radio("sselect a Response",("Posetive","Negative","Moderate","room for improment"))
         
         
         st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
