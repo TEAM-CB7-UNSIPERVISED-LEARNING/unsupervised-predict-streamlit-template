@@ -105,7 +105,7 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("solution")
-        st.write("we build this app look for movies using collaborative filtering and contend basesd filtering recommendation sytems")
+        st.write("we build this app to look for movies using collaborative filtering and contend basesd filtering recommendation sytems")
         st.image("https://www.researchgate.net/profile/Lionel-Ngoupeyou-Tondji/publication/323726564/figure/fig5/AS:631605009846299@1527597777415/Content-based-filtering-vs-Collaborative-filtering-Source.png")
 
     # You may want to add more sections here for aspects such as an EDA,
