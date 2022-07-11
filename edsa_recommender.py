@@ -136,7 +136,7 @@ def main():
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
         st.subheader("Raw data and Labels")
         if st.checkbox("check raw data"):
-            st.write(raw[["movie.csv","ratings.csv"]])
+            st.write("movies.csv")
     #Contuct Deteils
     if page_selection =="Contuct Details":
         st.write("Contuct Details")
