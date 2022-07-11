@@ -48,11 +48,12 @@ def main():
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
     page_options = ["Recommender System","Solution Overview","Team Profile","Data analysis", "Contuct Details","Imformation","Datasets","Glossary","feedback","map location"]
-    st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..AFlM2_oXUtv_5Nvdgp8ucQ.-88yu_YGu0F0JcZvnAJuMtl8H1Qdl2meQaDgAFu05t_nI133kS4uq5Ws1HT4O2kdsjXz9tkmUpp4bLOGU-c9ZWo-7yoK1mF8mOgBDShC_kE4FOEl_B08hlJOlUblrUt0KVg7nBhKPiacWjek2h5xAqKPrpoqsFwauVuGVdch_JKvudphJmRWJgx-VoDPX12itmeBRfoHBHzLtxq0IR7IM6JeUSuwskndjzQrM05r7BV5eO07J3wh_oBBeFhgm-IHtjTSczmqa1I-MzgqCqNmlpzGEFVVSVuCYMgmBPyWT4hiXe1T4RS-gXi8aZsXFA85uy9liIeT_2XSmO6b6ku1qo8Vee7K2Kdxy98unNDPLDo332Vew_LaW6Q4HlDTwnns5YROW7fH9Uk5ffs1WG-YT3lOHvlMdiBovcNucYCqvU01PyE0m7bDrmXZgV9cRrLwj9YjV4gaJE7KuJ1ubAW1OqWFxF8hAW_ZRKue6dNkNsn__2JLyeXjzwb9JgZ0EbjCgB2XPEY02a2N_cGOadji9wXKgXzRe2GhTmh5uLo6oJpF0W3ElOuXGIdC7m8HnIcVD-i7KPTV9NxAbO5titdKI0o7uKR_-WRifkdEC91oOVH1pB1UZGgAMGtkEBIc4SiMfUqIbATFm-DfEtaY7DPofVtrfeO0GZIw3UDgL1HqY2U.dVvHLGAmwGhtNnFdMa-ldg/__results___files/__results___18_0.png")
+    
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
     # -------------------------------------------------------------------
     page_selection = st.sidebar.selectbox("Choose Option", page_options)
+    st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..AFlM2_oXUtv_5Nvdgp8ucQ.-88yu_YGu0F0JcZvnAJuMtl8H1Qdl2meQaDgAFu05t_nI133kS4uq5Ws1HT4O2kdsjXz9tkmUpp4bLOGU-c9ZWo-7yoK1mF8mOgBDShC_kE4FOEl_B08hlJOlUblrUt0KVg7nBhKPiacWjek2h5xAqKPrpoqsFwauVuGVdch_JKvudphJmRWJgx-VoDPX12itmeBRfoHBHzLtxq0IR7IM6JeUSuwskndjzQrM05r7BV5eO07J3wh_oBBeFhgm-IHtjTSczmqa1I-MzgqCqNmlpzGEFVVSVuCYMgmBPyWT4hiXe1T4RS-gXi8aZsXFA85uy9liIeT_2XSmO6b6ku1qo8Vee7K2Kdxy98unNDPLDo332Vew_LaW6Q4HlDTwnns5YROW7fH9Uk5ffs1WG-YT3lOHvlMdiBovcNucYCqvU01PyE0m7bDrmXZgV9cRrLwj9YjV4gaJE7KuJ1ubAW1OqWFxF8hAW_ZRKue6dNkNsn__2JLyeXjzwb9JgZ0EbjCgB2XPEY02a2N_cGOadji9wXKgXzRe2GhTmh5uLo6oJpF0W3ElOuXGIdC7m8HnIcVD-i7KPTV9NxAbO5titdKI0o7uKR_-WRifkdEC91oOVH1pB1UZGgAMGtkEBIc4SiMfUqIbATFm-DfEtaY7DPofVtrfeO0GZIw3UDgL1HqY2U.dVvHLGAmwGhtNnFdMa-ldg/__results___files/__results___24_0.png")
     if page_selection == "Recommender System":
         # Header contents
         st.write('# Movie Recommender Engine')
