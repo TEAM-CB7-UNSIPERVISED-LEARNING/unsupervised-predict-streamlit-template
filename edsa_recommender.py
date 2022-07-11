@@ -137,6 +137,13 @@ def main():
         st.subheader("Raw data and Labels")
         if st.checkbox("check raw data"):
             st.write("movies.csv")
+            st.write("ratings.csv")
+            st.write("genome_scores.csv")
+            st.write("genome_tags.csv")
+            st.write("imdb_data.csv")
+            st.write("tags.csv")
+            st.write("test.csv")
+            st.write("train.csv")
     #Contuct Deteils
     if page_selection =="Contuct Details":
         st.write("Contuct Details")
