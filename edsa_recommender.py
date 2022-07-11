@@ -117,13 +117,15 @@ def main():
         st.title("Team CB7")
         st.write("Team CB7 is an elete group of data scientists all who are dedicated in making all types of reccomendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
         #team mates names
-        st.write("Thembani maswengani - Team Learder -email t.maswanganyi101@gmail.com ")
-        st.write("Katlego Maponya -Team Coordinator -email mr015khai@gmail.com")
-        st.write("Keabetswe sebanyoni  - email Keamogetswe.Sibanyoni@fnb.co.za ")
-        st.write("Charmain Nhlapho     - email Charmainlindelwa@gmail.com")
-        st.write("Sydney Abrahams      - email sidneyabrahamsrsa@gmail.com")
-        st.write("MR easy gym          - email bethuelmas94@gmail.com")
-        st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
+        if st.checkbox("Team mates"):
+            st.write("Thembani maswengani - Team Learder -email t.maswanganyi101@gmail.com ")
+            st.write("Katlego Maponya -Team Coordinator -email mr015khai@gmail.com")
+            st.write("Keabetswe sebanyoni  - email Keamogetswe.Sibanyoni@fnb.co.za ")
+            st.write("Charmain Nhlapho     - email Charmainlindelwa@gmail.com")
+            st.write("Sydney Abrahams      - email sidneyabrahamsrsa@gmail.com")
+            st.write("MR easy gym          - email bethuelmas94@gmail.com")
+            st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
+        st.image("https://media.istockphoto.com/photos/illustration-technology-hexagon-background-and-data-artificial-deep-picture-id1205195628")
         
     #EDA
     if page_selection == "Data analysis":
