@@ -115,6 +115,7 @@ def main():
     if page_selection == "Team Profile":
         #Team name
         st.title("Team CB7")
+        st.write("Team CB7 is an elete group of data scientists all who are dedicated in making all types of reccomendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
         #team mates names
         st.write("Thembani maswengani - Team Learder -email t.maswanganyi101@gmail.com ")
         st.write("Katlego Maponya -Team Coordinator -email mr015khai@gmail.com")
