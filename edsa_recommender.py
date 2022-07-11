@@ -168,6 +168,14 @@ def main():
             st.write("tags.csv")
             st.write("test.csv")
             st.write("train.csv")
+    #Glossary page
+    if page_selection == "Glossary":
+        st.write("Glossary of words used that need further explanations")
+        st.image("https://tlt-translations.com/en/using-sap-terminology-correctly/")
+        if st.checkbox("checkbox"):
+            st.write(" contend based filtereing ")
+            st.write("collabarative filtereing")
+            st.write("Item based filtering")
         
     
 
