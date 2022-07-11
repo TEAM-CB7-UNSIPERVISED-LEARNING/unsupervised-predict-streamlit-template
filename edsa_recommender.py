@@ -186,8 +186,11 @@ def main():
         st.image("https://media.istockphoto.com/photos/your-feedback-matters-picture-id688306678")
         st.write ("feedback")
         st.text_area("Enter text below","enter your sentence/Enter your feedback")
-        st.info('thank you fro your feeback')
-        option = st.radio("sselect Response",("Posetive","Negative","Moderate"))
+        st.info('thank you for your feeback')
+        option = st.radio("sselect a Response",("Posetive","Negative","Moderate"))
+        
+        
+        st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
         
         
     
