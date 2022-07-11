@@ -161,6 +161,13 @@ def main():
         st.write("Tweeter - @TEAMCB7")
         st.write("whatsap - 0814466788")
         st.write("mobile - 0792233448")
+        if st.checkbox("check availability of staff"):
+            st.write("monday - 08:00 to 18:00")
+            st.write("Tuesday - 08:00 to 18:00 ")
+            st.write("wednesday - 08:00 to 18:00")
+            st.write("Thursday - 08:00 to 18:00")
+            st.write("friday - 08:00 to 18:00")
+            st.write("weekends - 08:00 to 13:00")
         
     #dataset page
     if page_selection == "Datasets":
