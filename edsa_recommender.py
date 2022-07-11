@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Team Profile","Data analysis", "Contuct Details","Imformation","Datasets","Glossary","feedback"]
+    page_options = ["Recommender System","Solution Overview","Team Profile","Data analysis", "Contuct Details","Imformation","Datasets","Glossary","feedback","map location"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -207,6 +207,9 @@ def main():
         
         
         st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
+    #map location
+    if page_selection == "map location":
+        st.map("https://www.google.co.za/maps/@-25.7458176,28.1935872,12z")
         
         
     
