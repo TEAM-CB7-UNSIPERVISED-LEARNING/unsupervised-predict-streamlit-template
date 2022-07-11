@@ -209,6 +209,7 @@ def main():
         st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
     #map location
     if page_selection == "map location":
+        st.write("map location")
         st.map("https://www.google.co.za/maps/@-25.7458176,28.1935872,12z")
         
         
