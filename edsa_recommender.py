@@ -176,6 +176,11 @@ def main():
             st.write(" contend based filtereing ")
             st.write("collabarative filtereing")
             st.write("Item based filtering")
+    #feedback page
+    if page_selection == "feedback":
+        st.image("https://media.istockphoto.com/photos/your-feedback-matters-picture-id688306678")
+        st.write ("feedback")
+        feedback_text = st.text_area("Enter text","enter your sentence", "Enter your feed back")
         
     
 
