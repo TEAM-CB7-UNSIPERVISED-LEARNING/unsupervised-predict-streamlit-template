@@ -178,6 +178,7 @@ def main():
             st.write("Item based filtering")
     #feedback page
     if page_selection == "feedback":
+        st.write("Here at CB7 we appriciate you thoughts and feedback, let us know what you think about our product and service, thank you in advance")
         st.image("https://media.istockphoto.com/photos/your-feedback-matters-picture-id688306678")
         st.write ("feedback")
         st.text_area("Enter text below","enter your sentence/Enter your feedback")
