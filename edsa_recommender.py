@@ -146,6 +146,8 @@ def main():
             st.write("test.csv")
             st.write("train.csv")
             
+            st.image("https://raw.githubusercontent.com/TEAM-CB7-UNSIPERVISED-LEARNING/datasets/main/recommendation-system.webp?raw=true")
+            
     #Contuct Deteils
     if page_selection =="Contuct Details":
         st.write("Contuct Details")
