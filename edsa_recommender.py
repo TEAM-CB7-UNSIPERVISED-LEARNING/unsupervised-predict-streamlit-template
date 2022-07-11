@@ -126,8 +126,9 @@ def main():
     #EDA
     if page_selection == "Data analysis":
         st.write("EXPLONATORY DATA ANALYSIS")
-        st.write("This is the first step in EDA, we need to understand the variables in the data set, like what are the input variables and what are the output variables? Then we need to understand the type of the variables in the data set, like is it Integer? A float value? Or a String value? Lastly we need to analyze if the variables are continuous or categorical. Gender is an example of categorical variable while height is an example of continuous variable")
         if st.checkbox("check EDA"):
+            st.write("This is the first step in EDA, we need to understand the variables in the data set, like what are the input variables and what are the output variables? Then we need to understand the type of the variables in the data set, like is it Integer? A float value? Or a String value? Lastly we need to analyze if the variables are continuous or categorical. Gender is an example of categorical variable while height is an example of continuous variable")
+        
         #IMAGE
         #bargraph
             st.write("Bargragh")
