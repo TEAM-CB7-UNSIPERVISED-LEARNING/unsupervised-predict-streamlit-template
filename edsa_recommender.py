@@ -146,10 +146,13 @@ def main():
         st.write("Tweeter - @TEAMCB7")
         st.write("whatsap - 0814466788")
         st.write("mobile - 0792233448")
-        st.image("https://pixabay.com/images/search/contact%20us/")
+        st.image("")
     #dataset page
     if page_selection == "Datasets":
+        st.image("https://intellipaat.com/mediaFiles/2018/07/Structured-Data-Vs.-Unstructured-Data.png")
+        st.write("Raw Data Used that was used to test and train our models")
         st.write("genome_scores.csv","genome_tags.csv","imdb_data_csv","links.csv","movies.csv","tags.csv","test.csv","train.csv")
+        
     
 
     
