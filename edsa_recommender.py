@@ -152,6 +152,11 @@ def main():
     #Contuct Deteils
     if page_selection =="Contuct Details":
         st.write("Contuct Details")
+        st.write("contuct us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
+        st.write("avilability of stuff to answer your calls",
+                 "during the week mon to frida 8:00 to 18:"
+                 "Weekends is between 8:00 and 13:00")
+        
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
         st.write("Mail - TeamCB7@gmail.com")
         st.write("facebook - ClubCB7")
