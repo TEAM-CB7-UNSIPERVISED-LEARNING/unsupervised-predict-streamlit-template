@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "Contuct Details","Imformation","Datasets"]
+    page_options = ["Recommender System","Solution Overview","Team Profile","Data analysis", "Contuct Details","Imformation","Datasets","Glossary","feedback"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -111,7 +111,7 @@ def main():
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
     # Building Team Page
-    if page_selection == "Team":
+    if page_selection == "Team Profile":
         #Team name
         st.title("Team CB7")
         #team mates names
@@ -136,7 +136,7 @@ def main():
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
         st.subheader("Raw data and Labels")
         if st.checkbox("check raw data"):
-            st.write(raw[["genome_scores.csv","genome_tags.csv","imdb_data_csv","links.csv","movies.csv","tags.csv","test.csv","train.csv"]])
+            st.write(raw[["movie.csv","ratings.csv"]])
     #Contuct Deteils
     if page_selection =="Contuct Details":
         st.write("Contuct Details")
@@ -151,7 +151,7 @@ def main():
     if page_selection == "Datasets":
         st.image("https://intellipaat.com/mediaFiles/2018/07/Structured-Data-Vs.-Unstructured-Data.png")
         st.write("Raw Data Used that was used to test and train our models")
-        st.write("genome_scores.csv","genome_tags.csv","imdb_data_csv","links.csv","movies.csv","tags.csv","test.csv","train.csv")
+        st.write("movies.csv","ratings.csv")
         
     
 
