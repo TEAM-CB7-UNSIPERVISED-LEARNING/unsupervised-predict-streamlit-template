@@ -171,12 +171,15 @@ def main():
             st.write("test.csv")
             st.write("train.csv")
             
+            
+            st.write(" for our reccomendation systems to work, we needed this data, we trined it and tested it using our models and we reached succes")
+            
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
         st.image("https://www.termcoord.eu/wp-content/uploads/2021/08/Multilingual-digital-terminology-today.png")
         if st.checkbox("checkbox"):
-            st.write(" contend based filtereing - it item data focused")
+            st.write(" contend based filtereing - item data focused")
             st.write("collabarative filtereing - user data focused")
             st.write("Hybrid Recommendations - uses both item data and user data")
             
