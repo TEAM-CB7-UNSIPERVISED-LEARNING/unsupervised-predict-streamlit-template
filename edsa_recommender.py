@@ -152,8 +152,8 @@ def main():
         st.write("Datasets")
         st.image("https://intellipaat.com/mediaFiles/2018/07/Structured-Data-Vs.-Unstructured-Data.png")
         st.write("Raw Data Used that was used to test and train our models")
-        if st.checkbox("check raw data")
-        st.write("movies.csv","ratings.csv")
+        if st.checkbox("check raw data"):
+            st.write("movies.csv","ratings.csv")
         
     
 
