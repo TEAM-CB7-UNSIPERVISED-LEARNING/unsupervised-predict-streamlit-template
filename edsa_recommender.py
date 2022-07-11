@@ -146,6 +146,7 @@ def main():
             st.write("test.csv")
             st.write("train.csv")
             
+            st.write("take a look at the picture below, and in a nutshell understand the benefits of the reccomendatin system")
             st.image("https://raw.githubusercontent.com/TEAM-CB7-UNSIPERVISED-LEARNING/datasets/main/recommendation-system.webp?raw=true")
             
     #Contuct Deteils
