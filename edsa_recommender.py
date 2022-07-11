@@ -171,7 +171,7 @@ def main():
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
-        st.image("https://tlt-translations.com/en/using-sap-terminology-correctly/")
+        st.image("https://www.inter-contact.de/en/blog/consistent-corporate-terminology-in-every-language")
         if st.checkbox("checkbox"):
             st.write(" contend based filtereing ")
             st.write("collabarative filtereing")
