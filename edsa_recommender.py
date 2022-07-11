@@ -129,6 +129,7 @@ def main():
         st.write("This is the first step in EDA, we need to understand the variables in the data set, like what are the input variables and what are the output variables? Then we need to understand the type of the variables in the data set, like is it Integer? A float value? Or a String value? Lastly we need to analyze if the variables are continuous or categorical. Gender is an example of categorical variable while height is an example of continuous variable")
         #IMAGE
         st.image("https://st3.depositphotos.com/3116407/15347/i/950/depositphotos_153476170-stock-photo-data-analysis-concept-on-a.jpg")
+        
     #imformation
     if page_selection == "Imformation":
         st.write("In today’s technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, EDSA is challenging you to construct a recommendation algorithm based on content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed, based on their historical preferences.  ")
@@ -144,6 +145,7 @@ def main():
             st.write("tags.csv")
             st.write("test.csv")
             st.write("train.csv")
+            
     #Contuct Deteils
     if page_selection =="Contuct Details":
         st.write("Contuct Details")
@@ -153,7 +155,7 @@ def main():
         st.write("Tweeter - @TEAMCB7")
         st.write("whatsap - 0814466788")
         st.write("mobile - 0792233448")
-        st.image("")
+        
     #dataset page
     if page_selection == "Datasets":
         st.write("Datasets")
@@ -168,6 +170,7 @@ def main():
             st.write("tags.csv")
             st.write("test.csv")
             st.write("train.csv")
+            
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
@@ -176,6 +179,7 @@ def main():
             st.write(" contend based filtereing ")
             st.write("collabarative filtereing")
             st.write("Item based filtering")
+            
     #feedback page
     if page_selection == "feedback":
         st.write("Here at CB7 we appriciate you thoughts and feedback, let us know what you think about our product and service, thank you in advance")
