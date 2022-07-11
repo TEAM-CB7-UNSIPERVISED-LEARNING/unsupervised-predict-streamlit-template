@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "Contuct us@","Imformation","Datasets"]
+    page_options = ["Recommender System","Solution Overview","Team","Data analysis", "Contuct Details","Imformation","Datasets"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -138,14 +138,14 @@ def main():
         if st.checkbox("check raw data"):
             st.write(raw[["genome_scores.csv","genome_tags.csv","imdb_data_csv","links.csv","movies.csv","tags.csv","test.csv","train.csv"]])
     #Contuct Deteils
-    if page_selection =="Contuct us@":
+    if page_selection =="Contuct Details":
         st.write("Contuct Details")
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
-        st.write("Mail")
-        st.write("facebook")
-        st.write("Tweeter")
-        st.write("whatsap")
-        st.write("mobile")
+        st.write("Mail - TeamCB7@gmail.com")
+        st.write("facebook - ClubCB7")
+        st.write("Tweeter - @TEAMCB7")
+        st.write("whatsap - 0814466788")
+        st.write("mobile - 0792233448")
         st.image("https://pixabay.com/images/search/contact%20us/")
     #dataset page
     if page_selection == "Datasets":
