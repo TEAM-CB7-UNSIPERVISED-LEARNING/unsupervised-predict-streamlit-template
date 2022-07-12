@@ -235,7 +235,7 @@ def main():
         st.write ("feedback")
         st.text_area("Enter text below","enter your sentence/Enter your feedback")
         st.info('thank you for your feeback')
-        option = st.radio("sselect a Response",("Posetive","Negative","Moderate","room for improment"))
+        option = st.radio("select a Response",("Posetive","Negative","Moderate","room for improment"))
         
         
         st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
