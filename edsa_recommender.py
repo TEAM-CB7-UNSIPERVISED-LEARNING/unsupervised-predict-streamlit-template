@@ -163,7 +163,7 @@ def main():
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
         
     #imformation
-    if page_selection == "Imformation":
+    if page_selection == "Information":
         st.write("In today’s technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, EDSA is challenging you to construct a recommendation algorithm based on content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed, based on their historical preferences.  ")
         #Image
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
@@ -182,9 +182,9 @@ def main():
             st.image("https://raw.githubusercontent.com/TEAM-CB7-UNSIPERVISED-LEARNING/datasets/main/recommendation-system.webp?raw=true")
             
     #Contuct Deteils
-    if page_selection =="Contuct Details":
-        st.write("Contuct Details")
-        st.write("contuct us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
+    if page_selection =="Contact Details":
+        st.write("Contact Details")
+        st.write("contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
         st.write("avilability of stuff to answer your calls", "during the week mon to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
         
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
