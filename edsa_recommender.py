@@ -324,7 +324,7 @@ def main():
         st.write("avilability of stuff to answer your calls", "during the week mon to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
         
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
-        st.write("Mail - TeamCB7@gmail.com")
+        st.info("Mail - TeamCB7@gmail.com")
         st.write("facebook - ClubCB7")
         st.write("Tweeter - @TEAMCB7")
         st.write("whatsap - 0814466788")
