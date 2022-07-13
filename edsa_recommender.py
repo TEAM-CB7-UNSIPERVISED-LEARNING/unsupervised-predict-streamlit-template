@@ -407,7 +407,7 @@ def main():
     #suscription
     if page_selection == "suscription":
         st.info ("Price")
-        option = st.radio("select a price",("up 200","200 to 300","over 300"))
+        option = st.radio("up 200","200 to 300","over 300")
         if st.checkbox("checkbox"):
             st.info("format")
             st.write("DVD")
