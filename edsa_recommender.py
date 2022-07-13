@@ -402,10 +402,7 @@ def main():
         
         st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
         
-        
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         
     #suscription
     if page_selection == "suscription":
@@ -432,13 +429,6 @@ def main():
                 st.write("Rmin -Rmax")
                 
                 st.info("MPAA Rating")
-        
-=======
->>>>>>> parent of ddaba0e (Update edsa_recommender.py)
-=======
->>>>>>> parent of ddaba0e (Update edsa_recommender.py)
-=======
->>>>>>> parent of ddaba0e (Update edsa_recommender.py)
     
 
     
