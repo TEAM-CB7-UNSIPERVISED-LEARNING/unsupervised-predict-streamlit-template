@@ -381,7 +381,7 @@ def main():
         st.info("Here at CB7 we appriciate you thoughts and feedback, let us know what you think about our product and service, thank you in advance")
         st.image("https://media.istockphoto.com/photos/your-feedback-matters-picture-id688306678")
         st.title("feel free to get in touch with us")
-        st.markdown('''<span style="color:blue"> **Help us improve this app by rating it. Tell us how to give you a better user experience.** </span>''', unsafe_allow_html=True)
+        st.info('''<span style="color:blue"> **Help us improve this app by rating it. Tell us how to give you a better user experience.** </span>''', unsafe_allow_html=True)
         @st.cache(allow_output_mutation=True)
         def get_data():
             return []
