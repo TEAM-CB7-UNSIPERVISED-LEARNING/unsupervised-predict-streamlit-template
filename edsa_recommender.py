@@ -108,6 +108,89 @@ def main():
         st.image(('resources/imgs/countdown.gif'), use_column_width=True)
         st.markdown('Please Refer to the About Machine Learning Page to learn more about the techniques used to recommend movies. If you decide not to use the recommender systems you can use this page to filter movies based on the rating of the movie , the year in which the movie was released and the genre of the movies. After you change the filter you will be left with movies that are specific to that filter used. Then when you scroll down you will see the movie name and the link to a youtube trailer of that movie. When you click the link ,you will see a page on youtube for that specific movie and you can watch the trailer and see if you like it. This is an alternative method to you if you are not satisfied with the recommender engine . Enjoy! ', unsafe_allow_html=True)
         
+        #movies
+        df = pd.read_csv('resources/data/movies.csv')
+        rating = pd.read_csv('resources/data/ratings.csv')
+        
+        def explode(df, lst_cols, fill_value='', preserve_index=False):
+            import numpy as np
+             # make sure `lst_cols` is list-alike
+            if (lst_cols is not None
+                    and len(lst_cols) > 0
+                    and not isinstance(lst_cols, (list, tuple, np.ndarray, pd.Series))):
+                lst_cols = [lst_cols]
+            # all columns except `lst_cols`
+            idx_cols = df.columns.difference(lst_cols)
+            # calculate lengths of lists
+            lens = df[lst_cols[0]].str.len()
+            # preserve original index values    
+            idx = np.repeat(df.index.values, lens)
+            # create "exploded" DF
+            res = (pd.DataFrame({
+                        col:np.repeat(df[col].values, lens)
+                        for col in idx_cols},
+                        index=idx)
+                    .assign(**{col:np.concatenate(df.loc[lens>0, col].values)
+                            for col in lst_cols}))
+            # append those rows that have empty lists
+            if (lens == 0).any():
+                # at least one list in cells is empty
+                res = (res.append(df.loc[lens==0, idx_cols], sort=False)
+                            .fillna(fill_value))
+            # revert the original index order
+            res = res.sort_index()   
+            # reset index if requested
+            if not preserve_index:        
+                res = res.reset_index(drop=True)
+            return res 
+        movie_data = pd.merge(rating, df, on='movieId')
+        movie_data['year'] = movie_data.title.str.extract('(\(\d\d\d\d\))',expand=False)
+        #Removing the parentheses
+        movie_data['year'] = movie_data.year.str.extract('(\d\d\d\d)',expand=False)
+
+        movie_data.genres = movie_data.genres.str.split('|')
+        movie_rating = st.sidebar.number_input("Pick a rating ",0.5,5.0, step=0.5)
+
+        movie_data = explode(movie_data, ['genres'])
+        movie_title = movie_data['genres'].unique()
+        title = st.selectbox('Genre', movie_title)
+        movie_data['year'].dropna(inplace = True)
+        movie_data = movie_data.drop(['movieId','timestamp','userId'], axis = 1)
+        year_of_movie_release = movie_data['year'].sort_values(ascending=False).unique()
+        release_year = st.selectbox('Year', year_of_movie_release)
+
+        movie = movie_data[(movie_data.rating == movie_rating)&(movie_data.genres == title)&(movie_data.year == release_year)]
+        df = movie.drop_duplicates(subset = ["title"])
+        if len(df) !=0:
+            st.write(df)
+        if len(df) ==0:
+            st.write('We have no movies for that rating!')        
+        def youtube_link(title):
+    
+            """This function takes in the title of a movie and returns a Search query link to youtube
+    
+            INPUT: ('Avengers age of ultron')
+            -----------
+    
+            OUTPUT: https://www.youtube.com/results?search_query=The+little+Mermaid&page=1
+            ----------
+            """
+            title = title.replace(' ','+')
+            base = "https://www.youtube.com/results?search_query="
+            q = title
+            page = "&page=1"
+            URL = base + q + page
+            return URL            
+        if len(df) !=0:           
+            for _, row in df.iterrows():
+                st.write(row['title'])
+                st.write(youtube_link(title = row['title']))
+
+
+        
+
+
+        
     #welcome page
     if page_selection == "welcome":
         st.title("'# Welcome To Our Movie Recommender")
