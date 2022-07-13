@@ -403,6 +403,30 @@ def main():
         st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
         
         
+        
+    #suscription
+    if page_selection == "suscription":
+        st.info ("Price")
+        option = st.radio("up 200")
+        option = st.radio("R200 -r450")
+        option = st.radio("over R450")
+        if st.checkbox("checkbox"):
+            st.info("format")
+            st.write("DVD")
+            if st.checkbox("prices"):
+                option = st.radio("up to R150",'150 - 350', 'over 350')
+                st.write("Rmin -Rmax")
+                st.write("Blue_ray")
+                st.info("Type")
+                st.info = ("movie")
+                option = st.radio("up to 150","150 t0 300","over 400")
+                st.write("Rmin - Rmax")
+                st.info = ("series")
+                option = st.radio("R60", "R60 to R300"," over R300")
+                st.info= ("Drama")
+                option = st.radio("R40","R40 t0 R150","over R150")
+                st.info("MPAA Rating")
+        
     
 
     
