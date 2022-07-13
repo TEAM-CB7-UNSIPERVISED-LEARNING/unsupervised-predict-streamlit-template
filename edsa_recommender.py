@@ -224,12 +224,42 @@ def main():
         st.write("Team CB7 is an elite group of data scientists all who are dedicated in making all types of reccomendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
         #team mates names
         if st.checkbox("Team mates"):
-            st.write("Thembani maswengani - Team Learder -email t.maswanganyi101@gmail.com ")
-            st.write("Katlego Maponya -Team Coordinator -email mr015khai@gmail.com")
-            st.write("Keabetswe sebanyoni  - email Keamogetswe.Sibanyoni@fnb.co.za ")
-            st.write("Charmain Nhlapho     - email Charmainlindelwa@gmail.com")
-            st.write("Sydney Abrahams      - email sidneyabrahamsrsa@gmail.com")
-            st.write("MR easy gym          - email bethuelmas94@gmail.com")
+            st.info("Thembani Maswengani, Team Learde")
+            st.write("Github Account: ")
+            st.write("email: ")
+            st.write("Kaggle Account: ")
+            st.write("")
+            
+            st.info("Katlego Maponya, Team Coordinator")
+            st.write("Github Account: ")
+            st.write("email: ")
+            st.write("Kaggle Account: ")
+            st.write("")
+            
+            st.info("Keabetswe sebanyoni")
+            st.write("Github Account: ")
+            st.write("email: ")
+            st.write("Kaggle Account: ")
+            st.write("")
+            
+            st.info("Charmain Nhlapho")
+            st.write("Github Account: ")
+            st.write("email: ")
+            st.write("Kaggle Account: ")
+            st.write("")
+            
+            st.info("Sydney Abrahams")
+            st.write("Github Account: ")
+            st.write("email: ")
+            st.write("Kaggle Account: ")
+            st.write("")
+            
+            st.info("MR easy gym")
+            st.write("Github Account: ")
+            st.write("email: ")
+            st.write("Kaggle Account: ")
+            st.write("")
+            
             st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
         st.image("https://media.istockphoto.com/photos/illustration-technology-hexagon-background-and-data-artificial-deep-picture-id1205195628")
         
@@ -334,15 +364,7 @@ def main():
             st.write("collabarative filtereing - user data focused")
             st.write("Hybrid Recommendations - uses both item data and user data")
             
-    #feedback page
-    if page_selection == "feedback":
-        st.write("Here at CB7 we appriciate you thoughts and feedback, let us know what you think about our product and service, thank you in advance")
-        st.image("https://media.istockphoto.com/photos/your-feedback-matters-picture-id688306678")
-        st.write ("feedback")
-        st.text_area("Enter text below","enter your sentence/Enter your feedback")
-        st.info('thank you for your feeback')
-        option = st.radio("select a Response",("Posetive","Negative","Moderate","room for improment"))
-        
+    
         
         st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
     #map location
