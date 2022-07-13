@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Search for a movie","welcome","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","feedback","map location"]
+    page_options = ["Search for a movie","welcome","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","feedback","map location","Reviews"]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -206,6 +206,17 @@ def main():
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+    if page_selection == 'About':
+        st.title("About")
+        st.markdown("Are you a movie lover? Are you tired of wasting your time watching tons of trailers and ending up not watching their movies? Are you tired of finishing your popcorns before you find the right movie? That has come to an end!!")
+        st.image("resources/imgs/welcome.gif",use_column_width=True)
+        st.markdown("Then we have got the right App for you.")
+        st.subheader("How The App Works")
+        st.markdown("The Movie Recommender App filters or predicts your preferences based on your favourite or watched movie selections. With just a few clicks, you will select three of your most favourite movies from thousands of movies on the app and you will get top 10 movies you are most likely to enjoy. You have an option to view some data visualizations including word clouds that show the most popular words that appear in movie titles and plots on the most popular genres. The app also contains a contact page, where users of the app can rate our app and give feedback and suggestions. Links to movie sites are also included, so the user has quick and easy to access the recommended movies.")
+        st.subheader("Data Description")
+        st.markdown("The dataset used for the movie recommender app consists of several million 5-star ratings obtained from users of the online MovieLens movie recommendation service. The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB.")
+
+
     # Building Team Page
     if page_selection == "Team Profile":
         #Team name
@@ -338,6 +349,24 @@ def main():
     if page_selection == "map location":
         st.write("map location")
         st.image("https://www.google.co.za/maps/@-25.7458176,28.1935872,12z")
+        
+    #reviews page
+    if page_selection == 'Reviews':
+        st.title("Get in touch with us")
+        st.markdown('''<span style="color:blue"> **Help us improve this app by rating it. Tell us how to give you a better user experience.** </span>''', unsafe_allow_html=True)
+        @st.cache(allow_output_mutation=True)
+        def get_data():
+            return []
+        name = st.text_input("User name")
+        inputs = st.text_input("Let us improve your user experience!!!")
+        rate = st.slider("Rate us", 0, 5)
+        if st.button("Submit"):
+            get_data().append({"User name": name, "Suggestion": inputs,"rating":rate})
+        #st.markdown('''<span style="color:blue"> **What other users said:** </span>''', unsafe_allow_html=True)
+        #st.write(pd.DataFrame(get_data()))
+        st.markdown('''<span style="color:blue"> **For any questions contact us here:** </span>''', unsafe_allow_html=True)
+        st.markdown('chillfix@reviews.com')
+        #st.image(('resources/imgs/our contact2.PNG'), use_column_width=True)
         
         
     
