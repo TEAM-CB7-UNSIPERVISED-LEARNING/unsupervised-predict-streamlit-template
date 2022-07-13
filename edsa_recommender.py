@@ -412,17 +412,22 @@ def main():
             st.info("format")
             st.write("DVD")
             if st.checkbox("prices"):
+                
                 option = st.radio("select a price",("up to R150",'150 - 350', 'over 350'))
                 st.write("Rmin -Rmax")
-                st.write("Blue_ray")
-                st.info("Type")
-                st.info = ("movie")
+                
+                st.info("Blue_ray")
                 option = st.radio("select a price",("up to 150","150 t0 300","over 400"))
                 st.write("Rmin - Rmax")
+                
                 st.info = ("series")
                 option = st.radio("select a price",("R60", "R60 to R300"," over R300"))
+                st.write("Rmin - Rmax")
+                
                 st.info= ("Drama")
                 option = st.radio("select a price",("R40","R40 t0 R150","over R150"))
+                st.write("Rmin -Rmax")
+                
                 st.info("MPAA Rating")
         
     
