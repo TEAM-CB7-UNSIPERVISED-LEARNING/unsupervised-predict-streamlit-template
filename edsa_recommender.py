@@ -400,7 +400,7 @@ def main():
         #st.image(('resources/imgs/our contact2.PNG'), use_column_width=True)
         
         
-        st.write("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
+        st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
         
         
     
