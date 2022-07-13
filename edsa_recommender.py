@@ -193,7 +193,7 @@ def main():
         
     #welcome page
     if page_selection == "welcome":
-        st.info("'# Welcome To Our Movie Recommender")
+        st.title("'# Welcome To Our Movie Recommender")
         st.image("resources/imgs/minions.jpg" ,use_column_width=True)
         st.info('## ** * Where Movie Lovers Belong...* **')
     
