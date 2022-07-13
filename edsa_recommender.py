@@ -359,6 +359,7 @@ def main():
         @st.cache(allow_output_mutation=True)
         def get_data():
             return []
+        st.write("Enter your text below")
         name = st.text_input("User name")
         inputs = st.text_input("Let us improve your user experience!!!")
         rate = st.slider("Rate us", 0, 5)
