@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Search for a movie","welcome","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","map location","Reviews"]
+    page_options = ["Search for a movie","welcome","About","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","map location","Reviews"]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -106,7 +106,7 @@ def main():
     if page_selection == "Search for a movie":
         st.title("search for a movie")
         st.image(('resources/imgs/countdown.gif'), use_column_width=True)
-        st.markdown('Please Refer to the About Machine Learning Page to learn more about the techniques used to recommend movies. If you decide not to use the recommender systems you can use this page to filter movies based on the rating of the movie , the year in which the movie was released and the genre of the movies. After you change the filter you will be left with movies that are specific to that filter used. Then when you scroll down you will see the movie name and the link to a youtube trailer of that movie. When you click the link ,you will see a page on youtube for that specific movie and you can watch the trailer and see if you like it. This is an alternative method to you if you are not satisfied with the recommender engine . Enjoy! ', unsafe_allow_html=True)
+        st.info('Please Refer to the About Machine Learning Page to learn more about the techniques used to recommend movies. If you decide not to use the recommender systems you can use this page to filter movies based on the rating of the movie , the year in which the movie was released and the genre of the movies. After you change the filter you will be left with movies that are specific to that filter used. Then when you scroll down you will see the movie name and the link to a youtube trailer of that movie. When you click the link ,you will see a page on youtube for that specific movie and you can watch the trailer and see if you like it. This is an alternative method to you if you are not satisfied with the recommender engine . Enjoy! ', unsafe_allow_html=True)
         
         #movies
         df = pd.read_csv('resources/data/movies.csv')
@@ -373,7 +373,7 @@ def main():
         st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
     #map location
     if page_selection == "map location":
-        st.write("map location")
+        st.info("map location")
         st.image("https://www.google.co.za/maps/@-25.7458176,28.1935872,12z")
         
     #reviews page
