@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","feedback","map location"]
+    page_options = ["welcome","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","feedback","map location"]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -103,6 +103,13 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
+    #welcome page
+    if page_selection == "welcome":
+        st.title("'# Welcome To Our Movie Recommender")
+        st.image("resources/imgs/minions.jpg" ,use_column_width=True)
+        st.write('## ** * Where Movie Lovers Belong...* **')
+    
+    
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("solution")
