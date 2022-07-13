@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Search for a movie","welcome","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","feedback","map location","Reviews"]
+    page_options = ["Search for a movie","welcome","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","map location","Reviews"]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -267,40 +267,40 @@ def main():
     if page_selection == "Data analysis":
         st.write("EXPLONATORY DATA ANALYSIS")
         if st.checkbox("check EDA"):
-            st.write("This is the first step in EDA, we need to understand the variables in the data set, like what are the input variables and what are the output variables? Then we need to understand the type of the variables in the data set, like is it Integer? A float value? Or a String value? Lastly we need to analyze if the variables are continuous or categorical. Gender is an example of categorical variable while height is an example of continuous variable")
+            st.info("This is the first step in EDA, we need to understand the variables in the data set, like what are the input variables and what are the output variables? Then we need to understand the type of the variables in the data set, like is it Integer? A float value? Or a String value? Lastly we need to analyze if the variables are continuous or categorical. Gender is an example of categorical variable while height is an example of continuous variable")
         
         #IMAGE
         #bargraph
-            st.write("Bargragh")
+            st.info("Bargragh")
         
             st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ZthRasKOdKuzkwn73Prg3Q.-2uQd1gnD3tOVLf_F4ncVxsyXx55TyIxD9PcyrvBaaQKu4cWtmgQM2DUVUGUht8j4BHaLJmOUJs14UaWK_XADdvAMZwvWlcemk1jJsFihoifXh_-B2_MxRtQVhLV_0Laxo6f4ekPb2lqUloG9zG3Gx_dsw4gH23NNyEXtXGROKJ1IxIeh6aGPSBnNLV46_AgRKKgRhpfG7NEhj1RYtBphhw3Od9YPDFZIMlI4d_FEDveiv3CImcj6r0T_epkusH94r5iZrZSKeKw-VYXzN94yfBNg5Zb3_-RHzp_2ju-5H-ZsYmWkj2K5Eeg0aIkpD4V9ZnrGzdfaK_4hzeqO7mxlxFR-zO9jPTL5vlMLExpHUcjhxwnNjl8JLYcdFX7ONxoZGVc0SlfingeXoaSmoJHfULmt4eYn3HEF5sWIxfyFzkCTDY-1l3BwIZ2eRQoRWooBxWVawxbQGmp93ARJfhvFYABV9PNV74nAPf0rOTRvTkaVsXbO5c8P77ZBP0F_Eos1riYp3anAHrSeEWMJUijEuI2gWMmcbJl9tqW4bOiLDCxfNKo2U5_BucgPyteNcm9KLgfoZedFfBOCJRm7K8VwGoByGtVbDi2VAU982ZoucIOP82sQQFu1GLDlBvTvbuMr7c4wwhX_II-bW3r1P5xdo2XAnaelN5j2TvrgwkKA1I.wEaYpw6nzslj4lSVGztUVA/__results___files/__results___17_1.png")
         #piechart
         
-            st.write("pichart")
+            st.info("pichart")
         
             st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ZthRasKOdKuzkwn73Prg3Q.-2uQd1gnD3tOVLf_F4ncVxsyXx55TyIxD9PcyrvBaaQKu4cWtmgQM2DUVUGUht8j4BHaLJmOUJs14UaWK_XADdvAMZwvWlcemk1jJsFihoifXh_-B2_MxRtQVhLV_0Laxo6f4ekPb2lqUloG9zG3Gx_dsw4gH23NNyEXtXGROKJ1IxIeh6aGPSBnNLV46_AgRKKgRhpfG7NEhj1RYtBphhw3Od9YPDFZIMlI4d_FEDveiv3CImcj6r0T_epkusH94r5iZrZSKeKw-VYXzN94yfBNg5Zb3_-RHzp_2ju-5H-ZsYmWkj2K5Eeg0aIkpD4V9ZnrGzdfaK_4hzeqO7mxlxFR-zO9jPTL5vlMLExpHUcjhxwnNjl8JLYcdFX7ONxoZGVc0SlfingeXoaSmoJHfULmt4eYn3HEF5sWIxfyFzkCTDY-1l3BwIZ2eRQoRWooBxWVawxbQGmp93ARJfhvFYABV9PNV74nAPf0rOTRvTkaVsXbO5c8P77ZBP0F_Eos1riYp3anAHrSeEWMJUijEuI2gWMmcbJl9tqW4bOiLDCxfNKo2U5_BucgPyteNcm9KLgfoZedFfBOCJRm7K8VwGoByGtVbDi2VAU982ZoucIOP82sQQFu1GLDlBvTvbuMr7c4wwhX_II-bW3r1P5xdo2XAnaelN5j2TvrgwkKA1I.wEaYpw6nzslj4lSVGztUVA/__results___files/__results___18_0.png")
         
         #histogram
-            st.write("histogram")
+            st.info("histogram")
         
             st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ZthRasKOdKuzkwn73Prg3Q.-2uQd1gnD3tOVLf_F4ncVxsyXx55TyIxD9PcyrvBaaQKu4cWtmgQM2DUVUGUht8j4BHaLJmOUJs14UaWK_XADdvAMZwvWlcemk1jJsFihoifXh_-B2_MxRtQVhLV_0Laxo6f4ekPb2lqUloG9zG3Gx_dsw4gH23NNyEXtXGROKJ1IxIeh6aGPSBnNLV46_AgRKKgRhpfG7NEhj1RYtBphhw3Od9YPDFZIMlI4d_FEDveiv3CImcj6r0T_epkusH94r5iZrZSKeKw-VYXzN94yfBNg5Zb3_-RHzp_2ju-5H-ZsYmWkj2K5Eeg0aIkpD4V9ZnrGzdfaK_4hzeqO7mxlxFR-zO9jPTL5vlMLExpHUcjhxwnNjl8JLYcdFX7ONxoZGVc0SlfingeXoaSmoJHfULmt4eYn3HEF5sWIxfyFzkCTDY-1l3BwIZ2eRQoRWooBxWVawxbQGmp93ARJfhvFYABV9PNV74nAPf0rOTRvTkaVsXbO5c8P77ZBP0F_Eos1riYp3anAHrSeEWMJUijEuI2gWMmcbJl9tqW4bOiLDCxfNKo2U5_BucgPyteNcm9KLgfoZedFfBOCJRm7K8VwGoByGtVbDi2VAU982ZoucIOP82sQQFu1GLDlBvTvbuMr7c4wwhX_II-bW3r1P5xdo2XAnaelN5j2TvrgwkKA1I.wEaYpw6nzslj4lSVGztUVA/__results___files/__results___23_0.png")
         #wordcloud
         
-            st.write("wordcloud")
+            st.info("wordcloud")
         
             st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ZthRasKOdKuzkwn73Prg3Q.-2uQd1gnD3tOVLf_F4ncVxsyXx55TyIxD9PcyrvBaaQKu4cWtmgQM2DUVUGUht8j4BHaLJmOUJs14UaWK_XADdvAMZwvWlcemk1jJsFihoifXh_-B2_MxRtQVhLV_0Laxo6f4ekPb2lqUloG9zG3Gx_dsw4gH23NNyEXtXGROKJ1IxIeh6aGPSBnNLV46_AgRKKgRhpfG7NEhj1RYtBphhw3Od9YPDFZIMlI4d_FEDveiv3CImcj6r0T_epkusH94r5iZrZSKeKw-VYXzN94yfBNg5Zb3_-RHzp_2ju-5H-ZsYmWkj2K5Eeg0aIkpD4V9ZnrGzdfaK_4hzeqO7mxlxFR-zO9jPTL5vlMLExpHUcjhxwnNjl8JLYcdFX7ONxoZGVc0SlfingeXoaSmoJHfULmt4eYn3HEF5sWIxfyFzkCTDY-1l3BwIZ2eRQoRWooBxWVawxbQGmp93ARJfhvFYABV9PNV74nAPf0rOTRvTkaVsXbO5c8P77ZBP0F_Eos1riYp3anAHrSeEWMJUijEuI2gWMmcbJl9tqW4bOiLDCxfNKo2U5_BucgPyteNcm9KLgfoZedFfBOCJRm7K8VwGoByGtVbDi2VAU982ZoucIOP82sQQFu1GLDlBvTvbuMr7c4wwhX_II-bW3r1P5xdo2XAnaelN5j2TvrgwkKA1I.wEaYpw6nzslj4lSVGztUVA/__results___files/__results___24_0.png")
         
         #bargraph
-            st.write("bargraph")
+            st.info("bargraph")
         
             st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ZthRasKOdKuzkwn73Prg3Q.-2uQd1gnD3tOVLf_F4ncVxsyXx55TyIxD9PcyrvBaaQKu4cWtmgQM2DUVUGUht8j4BHaLJmOUJs14UaWK_XADdvAMZwvWlcemk1jJsFihoifXh_-B2_MxRtQVhLV_0Laxo6f4ekPb2lqUloG9zG3Gx_dsw4gH23NNyEXtXGROKJ1IxIeh6aGPSBnNLV46_AgRKKgRhpfG7NEhj1RYtBphhw3Od9YPDFZIMlI4d_FEDveiv3CImcj6r0T_epkusH94r5iZrZSKeKw-VYXzN94yfBNg5Zb3_-RHzp_2ju-5H-ZsYmWkj2K5Eeg0aIkpD4V9ZnrGzdfaK_4hzeqO7mxlxFR-zO9jPTL5vlMLExpHUcjhxwnNjl8JLYcdFX7ONxoZGVc0SlfingeXoaSmoJHfULmt4eYn3HEF5sWIxfyFzkCTDY-1l3BwIZ2eRQoRWooBxWVawxbQGmp93ARJfhvFYABV9PNV74nAPf0rOTRvTkaVsXbO5c8P77ZBP0F_Eos1riYp3anAHrSeEWMJUijEuI2gWMmcbJl9tqW4bOiLDCxfNKo2U5_BucgPyteNcm9KLgfoZedFfBOCJRm7K8VwGoByGtVbDi2VAU982ZoucIOP82sQQFu1GLDlBvTvbuMr7c4wwhX_II-bW3r1P5xdo2XAnaelN5j2TvrgwkKA1I.wEaYpw6nzslj4lSVGztUVA/__results___files/__results___26_1.png")
         
-        st.write("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
+        st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
         
     #imformation
     if page_selection == "Information":
-        st.write("In today’s technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, EDSA is challenging you to construct a recommendation algorithm based on content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed, based on their historical preferences.  ")
+        st.info("In today’s technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, EDSA is challenging you to construct a recommendation algorithm based on content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed, based on their historical preferences.  ")
         #Image
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
         st.subheader("Raw data and Labels")
@@ -320,7 +320,7 @@ def main():
     #Contuct Deteils
     if page_selection =="Contact Details":
         st.write("Contact Details")
-        st.write("contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
+        st.info("contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
         st.write("avilability of stuff to answer your calls", "during the week mon to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
         
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
