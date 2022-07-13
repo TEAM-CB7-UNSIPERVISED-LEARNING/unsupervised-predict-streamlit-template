@@ -353,7 +353,7 @@ def main():
             st.write("train.csv")
             
             
-            st.write(" for our reccomendation systems to work, we needed this data, we trined it and tested it using our models and we reached succes")
+            st.info(" for our reccomendation systems to work, we needed this data, we trined it and tested it using our models and we reached succes")
             
     #Glossary page
     if page_selection == "Glossary":
