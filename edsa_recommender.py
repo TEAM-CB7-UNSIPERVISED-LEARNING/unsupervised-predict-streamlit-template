@@ -403,6 +403,7 @@ def main():
         st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
         
         
+<<<<<<< HEAD
         
     #suscription
     if page_selection == "suscription":
@@ -430,6 +431,8 @@ def main():
                 
                 st.info("MPAA Rating")
         
+=======
+>>>>>>> parent of ddaba0e (Update edsa_recommender.py)
     
 
     
