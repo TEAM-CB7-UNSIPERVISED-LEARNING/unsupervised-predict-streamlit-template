@@ -335,7 +335,7 @@ def main():
             st.write("wednesday - 08:00 to 18:00")
             st.write("Thursday - 08:00 to 18:00")
             st.write("friday - 08:00 to 18:00")
-            st.write("weekends - 08:00 to 13:00")
+            st.info("weekends - 08:00 to 13:00")
         
     #dataset page
     if page_selection == "Datasets":
