@@ -224,7 +224,7 @@ def main():
         st.write("Team CB7 is an elite group of data scientists all who are dedicated in making all types of reccomendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
         #team mates names
         if st.checkbox("Team mates"):
-            st.info("Thembani Maswengani, Team Learde")
+            st.info("Thembani Maswengani, Team Learder")
             st.write("Github Account: ")
             st.write("email: ")
             st.write("Kaggle Account: ")
@@ -361,7 +361,11 @@ def main():
         st.image("https://www.termcoord.eu/wp-content/uploads/2021/08/Multilingual-digital-terminology-today.png")
         if st.checkbox("checkbox"):
             st.write(" contend based filtereing - item data focused")
+            st.info('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
+        
             st.write("collabarative filtereing - user data focused")
+            st.info('builds a model from your past behavior (i.e. movies watched or selected by the you) as well as similar decisions made by other users.')
+        
             st.write("Hybrid Recommendations - uses both item data and user data")
             
     
