@@ -405,6 +405,7 @@ def main():
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
     #suscription
     if page_selection == "suscription":
@@ -432,6 +433,8 @@ def main():
                 
                 st.info("MPAA Rating")
         
+=======
+>>>>>>> parent of ddaba0e (Update edsa_recommender.py)
 =======
 >>>>>>> parent of ddaba0e (Update edsa_recommender.py)
 =======
