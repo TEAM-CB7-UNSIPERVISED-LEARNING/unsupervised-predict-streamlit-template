@@ -368,6 +368,9 @@ def main():
         
             st.write("Hybrid Recommendations - uses both item data and user data")
             
+            st.info("Enlightennt about recmmender sytems background")
+            st.write("The basics of recommender systems were founded by researches into cognition science [1] and information retrieval [2], and its first manifestation was the Usenet communication system created by Duke University in the second half of the 1970s [3], where users were able to share textual content with each other.")
+            
     
         
         st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
