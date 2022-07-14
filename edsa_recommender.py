@@ -195,6 +195,7 @@ def main():
         st.write('# Welcome To Our Movie Recommender')
         st.image('resources/imgs/minions.jpg', use_column_width=True)
         st.write('## ** * Where Movie Lovers Belong...* **')
+        st.info("You are welcomed to become a member of family of movie Enthusiasts, so relax you mind and take it easy")
         #st.image('resources/imgs/Movie-Show-GIF-960.gif', use_column_width=True)
         
     
