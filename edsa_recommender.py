@@ -368,8 +368,17 @@ def main():
         
             st.write("Hybrid Recommendations - uses both item data and user data")
             
-            st.info("Enlightennt about recmmender sytems background")
+            st.write("Enlightennt about recmmender sytems background")
+            
+            st.write("Who invented recommendation system?")
+            
+            st.info("The Xerox Palo Alto Research Center (PARC) invented Tapestry to address this issue, and in so doing, created one of the first recommender systems.")
+            
             st.write("The basics of recommender systems were founded by researches into cognition science [1] and information retrieval [2], and its first manifestation was the Usenet communication system created by Duke University in the second half of the 1970s [3], where users were able to share textual content with each other.")
+            
+            st.write("When were automated recommender systems first developed and deployed?")
+            
+            st.info("Abstract Since their introduction in the early 1990's, automated recommender systems have revolutionized the marketing and delivery of commerce and content by providing personalized recommendations and predictions over a variety of large and complex product offerings")
             
     
         
