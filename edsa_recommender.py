@@ -191,11 +191,12 @@ def main():
 
         
     #welcome page
-    if page_selection == "welcome":
-        st.title("'# Welcome To Our Movie Recommender")
-        st.image("resources/imgs/minions.jpg" ,use_column_width=True)
-        st.info('## ** * Where Movie Lovers Belong..* **')
-    
+    if page_selection == "Welcome":
+        st.write('# Welcome To Our Movie Recommender')
+        st.image('resources/imgs/minions.jpg', use_column_width=True)
+        st.write('## ** * Where Movie Lovers Belong...* **')
+        #st.image('resources/imgs/Movie-Show-GIF-960.gif', use_column_width=True)
+        
     
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
