@@ -405,13 +405,10 @@ def main():
     if page_selection -- "history":
         st.write("History of recommender systems")
         st.info("A brief and superficial overview")
-        if st.checkbox("checkbox"):
-            st.write("Introduction")
-            st.write("In our daily lives we are getting into decision-making situations countless times, often even unnoticed. What should we put on in the morning which is suitable for our daily program? Which menu to choose in the dining room? Which task should we perform first? Which school should we enroll our child to? We answer thousands of crucial or everyday questions like this in our lifetime.")
-            
-            st.image("https://www.onespire.net/wp-content/uploads/2021/04/recommender-systems-brief-history.jpg")
+        st.write("https://www.onespire.net/wp-content/uploads/2021/04/recommender-systems-brief-history.jpg")
             
            
+    
         
 
     
