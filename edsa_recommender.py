@@ -263,9 +263,9 @@ def main():
             st.write("")
             
             st.info("Sydney Abrahams")
-            st.write("Github Account: ")
-            st.write("email: ")
-            st.write("Kaggle Account: ")
+            st.write("Github Account:sidney48  ")
+            st.write("email: mailto:sidneyabrahamsrsa@gmail.com ")
+            st.write("Kaggle Account: Sidney Abrahams ")
             st.write("")
             
             st.info("Bethuel Masango")
