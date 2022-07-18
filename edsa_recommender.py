@@ -294,7 +294,7 @@ def main():
         #histogram
             st.info("histogram")
         
-            st.image("resources/imgs/production.png")
+            st.image("resources/imgs/prouction.png")
             
             #wordcloud
         
