@@ -284,26 +284,26 @@ def main():
         #IMAGE
         #bargraph
             st.info("Bargragh")
-        
+            st.write("thus graph show the number of rating distribution")
             st.image("resources/imgs/rating.png")
         #piechart
         
             st.info("pichart")
-        
+            st.writw("this graph shows the distribution percentage of ratings")
             st.image("resources/imgs/pichart.png")
         #histogram
             st.info("histogram")
-        
+            st.write("this graph shows the number of movies produced per production.")
             st.image("resources/imgs/production.png")
             
             #wordcloud
         
             st.info("wordcloud")
-        
+            st.write("The visual above shows which words are commonly used when movies are titled")
             st.image("resources/imgs/cloud.png")
         #bargraph
             st.info("bargraph")
-        
+            st.write("thi graph shows the number of user ID")
             st.image("resources/imgs/user.png")
             
         st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
