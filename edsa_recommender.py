@@ -414,7 +414,7 @@ def main():
         inputs = st.text_input("Let us improve your user experience!!!")
         rate = st.slider("Rate us", 0, 5)
         st.info("thank you in advance")
-        option = st.radio("select a Response",("Posetive","Negative","Moderate","room for improment"))
+        option = st.radio("select a Response",("Posetive","Negative","Moderate","room for improvement"))
         if st.button("Submit"):
             get_data().append({"User name": name, "Suggestion": inputs,"rating":rate})
         #st.markdown('''<span style="color:blue"> **What other users said:** </span>''', unsafe_allow_html=True)
