@@ -285,28 +285,27 @@ def main():
         #bargraph
             st.info("Bargragh")
         
-            st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..I-tsuE6x7TuRsnNDUwvIKw.i7w-AhBEemKYKZ50cQIO95kKMofLi_i25o97BbPHmiq5GnBfm3N15cx4qh9PLEHCjXcz1a9QtFI-N5egXdioXD_MJhBr41hjaEnJiRrKg3loHc2cHZMEtwnvA8ETqi8nyKacsmDo00Arw-aP8-m_lEtdbh28ZsDHti_OsyDU1JPrwLAwU8n1WQxs02JfxHvGrUXAo0K9P2sWTkYTwp8OnR9OfiZZgIoNCMFaH3VVslttxzoNS5aDXPgJRZFh5fc75-RjpXz4opdXFQbgqNuCIJu0oGSiFhBY0hEG3WDvThhvaWEWPDkLq1ovnEJuPCITVBpd_k3gl3Zgb16ywteC0Gu0-3MrXYWlA04P1Ias_ABSN3IujVf34qS0avBKwhajbH8aYRlBC4eW5_TeZKXuBBwJCL6mh0cHRM6y2Q8spF8mxdmc40e6-tebW405mqyHC4FKEUblU0ud2Ct2QRsX-hZhrC1MB1Jhr5V6nKEX3O0fFWdLJ3wRoqICciosRH-UPxn4MzqNOztdPhyXDGhGiubh65sRAl8TcXVJqOQM0M3H9GnD1WFUJ2SJJCtmimSoTYtlubatsdwx96vpFG9HBR-xvGtp4TirY7kwFe04_Hjb9uIbekqdkpa646-h2xyurnLMEN2cNffWXpVpQwcphGlLfTDzGmZiiHSzSIPADgo.VihacIu_7W0r-FH8CAHY7w/__results___files/__results___17_1.png")
+            st.image("resources/imgs/bargraph.png")
         #piechart
         
             st.info("pichart")
         
-            st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..I-tsuE6x7TuRsnNDUwvIKw.i7w-AhBEemKYKZ50cQIO95kKMofLi_i25o97BbPHmiq5GnBfm3N15cx4qh9PLEHCjXcz1a9QtFI-N5egXdioXD_MJhBr41hjaEnJiRrKg3loHc2cHZMEtwnvA8ETqi8nyKacsmDo00Arw-aP8-m_lEtdbh28ZsDHti_OsyDU1JPrwLAwU8n1WQxs02JfxHvGrUXAo0K9P2sWTkYTwp8OnR9OfiZZgIoNCMFaH3VVslttxzoNS5aDXPgJRZFh5fc75-RjpXz4opdXFQbgqNuCIJu0oGSiFhBY0hEG3WDvThhvaWEWPDkLq1ovnEJuPCITVBpd_k3gl3Zgb16ywteC0Gu0-3MrXYWlA04P1Ias_ABSN3IujVf34qS0avBKwhajbH8aYRlBC4eW5_TeZKXuBBwJCL6mh0cHRM6y2Q8spF8mxdmc40e6-tebW405mqyHC4FKEUblU0ud2Ct2QRsX-hZhrC1MB1Jhr5V6nKEX3O0fFWdLJ3wRoqICciosRH-UPxn4MzqNOztdPhyXDGhGiubh65sRAl8TcXVJqOQM0M3H9GnD1WFUJ2SJJCtmimSoTYtlubatsdwx96vpFG9HBR-xvGtp4TirY7kwFe04_Hjb9uIbekqdkpa646-h2xyurnLMEN2cNffWXpVpQwcphGlLfTDzGmZiiHSzSIPADgo.VihacIu_7W0r-FH8CAHY7w/__results___files/__results___18_0.png")
-        
+            st.image("resources/imgs/pichart.png")
         #histogram
             st.info("histogram")
         
-            st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..I-tsuE6x7TuRsnNDUwvIKw.i7w-AhBEemKYKZ50cQIO95kKMofLi_i25o97BbPHmiq5GnBfm3N15cx4qh9PLEHCjXcz1a9QtFI-N5egXdioXD_MJhBr41hjaEnJiRrKg3loHc2cHZMEtwnvA8ETqi8nyKacsmDo00Arw-aP8-m_lEtdbh28ZsDHti_OsyDU1JPrwLAwU8n1WQxs02JfxHvGrUXAo0K9P2sWTkYTwp8OnR9OfiZZgIoNCMFaH3VVslttxzoNS5aDXPgJRZFh5fc75-RjpXz4opdXFQbgqNuCIJu0oGSiFhBY0hEG3WDvThhvaWEWPDkLq1ovnEJuPCITVBpd_k3gl3Zgb16ywteC0Gu0-3MrXYWlA04P1Ias_ABSN3IujVf34qS0avBKwhajbH8aYRlBC4eW5_TeZKXuBBwJCL6mh0cHRM6y2Q8spF8mxdmc40e6-tebW405mqyHC4FKEUblU0ud2Ct2QRsX-hZhrC1MB1Jhr5V6nKEX3O0fFWdLJ3wRoqICciosRH-UPxn4MzqNOztdPhyXDGhGiubh65sRAl8TcXVJqOQM0M3H9GnD1WFUJ2SJJCtmimSoTYtlubatsdwx96vpFG9HBR-xvGtp4TirY7kwFe04_Hjb9uIbekqdkpa646-h2xyurnLMEN2cNffWXpVpQwcphGlLfTDzGmZiiHSzSIPADgo.VihacIu_7W0r-FH8CAHY7w/__results___files/__results___23_0.png")
-        #wordcloud
+            st.image("resources/imgs/production.png")
+            
+            #wordcloud
         
             st.info("wordcloud")
         
-            st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..I-tsuE6x7TuRsnNDUwvIKw.i7w-AhBEemKYKZ50cQIO95kKMofLi_i25o97BbPHmiq5GnBfm3N15cx4qh9PLEHCjXcz1a9QtFI-N5egXdioXD_MJhBr41hjaEnJiRrKg3loHc2cHZMEtwnvA8ETqi8nyKacsmDo00Arw-aP8-m_lEtdbh28ZsDHti_OsyDU1JPrwLAwU8n1WQxs02JfxHvGrUXAo0K9P2sWTkYTwp8OnR9OfiZZgIoNCMFaH3VVslttxzoNS5aDXPgJRZFh5fc75-RjpXz4opdXFQbgqNuCIJu0oGSiFhBY0hEG3WDvThhvaWEWPDkLq1ovnEJuPCITVBpd_k3gl3Zgb16ywteC0Gu0-3MrXYWlA04P1Ias_ABSN3IujVf34qS0avBKwhajbH8aYRlBC4eW5_TeZKXuBBwJCL6mh0cHRM6y2Q8spF8mxdmc40e6-tebW405mqyHC4FKEUblU0ud2Ct2QRsX-hZhrC1MB1Jhr5V6nKEX3O0fFWdLJ3wRoqICciosRH-UPxn4MzqNOztdPhyXDGhGiubh65sRAl8TcXVJqOQM0M3H9GnD1WFUJ2SJJCtmimSoTYtlubatsdwx96vpFG9HBR-xvGtp4TirY7kwFe04_Hjb9uIbekqdkpa646-h2xyurnLMEN2cNffWXpVpQwcphGlLfTDzGmZiiHSzSIPADgo.VihacIu_7W0r-FH8CAHY7w/__results___files/__results___24_0.png")
-        
+            st.image("resources/imgs/cloud.png")
         #bargraph
             st.info("bargraph")
         
-            st.image("https://www.kaggleusercontent.com/kf/100259092/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..I-tsuE6x7TuRsnNDUwvIKw.i7w-AhBEemKYKZ50cQIO95kKMofLi_i25o97BbPHmiq5GnBfm3N15cx4qh9PLEHCjXcz1a9QtFI-N5egXdioXD_MJhBr41hjaEnJiRrKg3loHc2cHZMEtwnvA8ETqi8nyKacsmDo00Arw-aP8-m_lEtdbh28ZsDHti_OsyDU1JPrwLAwU8n1WQxs02JfxHvGrUXAo0K9P2sWTkYTwp8OnR9OfiZZgIoNCMFaH3VVslttxzoNS5aDXPgJRZFh5fc75-RjpXz4opdXFQbgqNuCIJu0oGSiFhBY0hEG3WDvThhvaWEWPDkLq1ovnEJuPCITVBpd_k3gl3Zgb16ywteC0Gu0-3MrXYWlA04P1Ias_ABSN3IujVf34qS0avBKwhajbH8aYRlBC4eW5_TeZKXuBBwJCL6mh0cHRM6y2Q8spF8mxdmc40e6-tebW405mqyHC4FKEUblU0ud2Ct2QRsX-hZhrC1MB1Jhr5V6nKEX3O0fFWdLJ3wRoqICciosRH-UPxn4MzqNOztdPhyXDGhGiubh65sRAl8TcXVJqOQM0M3H9GnD1WFUJ2SJJCtmimSoTYtlubatsdwx96vpFG9HBR-xvGtp4TirY7kwFe04_Hjb9uIbekqdkpa646-h2xyurnLMEN2cNffWXpVpQwcphGlLfTDzGmZiiHSzSIPADgo.VihacIu_7W0r-FH8CAHY7w/__results___files/__results___26_1.png")
-        
+            st.image("resources/imgs/ratings.png")
+            
         st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
         
