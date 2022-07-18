@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Search for a movie","Welcome","About","Recommender System","Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Datasets","Glossary","map location","Reviews","history","suscription"]
+    page_options = ["Welcome","About","Search for a movie","Recommender System","Dataset", "Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Glossary","Reviews","history",]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -222,31 +222,34 @@ def main():
     if page_selection == "Team Profile":
         #Team name
         st.title("Team CB7")
-        st.write("Team CB7 is an elite group of data scientists all who are dedicated in making all types of reccomendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
+        st.write("Team CB7 is an elite group of data scientists all who are dedicated in making all types of recommendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
         #team mates names
+        st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
+
         if st.checkbox("Team mates"):
             st.info("Thembani Maswengani, Team Learder")
-            st.write("Github Account: ")
-            st.write("email: ")
-            st.write("Kaggle Account: ")
+            st.write("Github Account:thembani47 ")
+            st.write("email: t.maswanganyi@gmail.com")
+            st.write("Kaggle Account:Thembani Maswnganyi ")
+            st.write("YouTube channel:Programming with Tief Everything ")
             st.write("")
             
             st.info("Katlego Maponya, Team Coordinator")
-            st.write("Github Account: ")
-            st.write("email: ")
-            st.write("Kaggle Account: ")
+            st.write("Github Account:Katlego Maponya 015khai ")
+            st.write("email: mr015khai@gmail.com")
+            st.write("Kaggle Account:Katlego Maponya ")
             st.write("")
             
-            st.info("Keabetswe sebanyoni")
-            st.write("Github Account: ")
-            st.write("email: ")
-            st.write("Kaggle Account: ")
+            st.info("Keamogetswe Sibanyoni")
+            st.write("Github Account: Keankie ")
+            st.write("email: Keamogetswe.Sibanyoni@fnb.co.za")
+            st.write("Kaggle Account: Keamogetswe Sibanyoni ")
             st.write("")
             
             st.info("Charmain Nhlapho")
-            st.write("Github Account: ")
-            st.write("email: ")
-            st.write("Kaggle Account: ")
+            st.write("Github Account:Charmain Nhlapho ")
+            st.write("email: charmainlindelwa@gmail.com")
+            st.write("Kaggle Account: Lindelwa Charmain")
             st.write("")
             
             st.info("Sydney Abrahams")
@@ -255,18 +258,16 @@ def main():
             st.write("Kaggle Account: ")
             st.write("")
             
-            st.info("MR easy gym")
-            st.write("Github Account: ")
-            st.write("email: ")
-            st.write("Kaggle Account: ")
+            st.info("Bethuel Masango")
+            st.write("Github Account: 123Masangobethuel")
+            st.write("email: bethuelmas94@gmail.com")
+            st.write("Kaggle Account:Bethuelsizwemasango ")
             st.write("")
             
-            st.image("http://images.clipartpanda.com/working-together-as-a-team-TeamEvent.jpg")
-        st.image("https://media.istockphoto.com/photos/illustration-technology-hexagon-background-and-data-artificial-deep-picture-id1205195628")
         
     #EDA
     if page_selection == "Data analysis":
-        st.write("EXPLONATORY DATA ANALYSIS")
+        st.write("EXPLORATORY DATA ANALYSIS")
         if st.checkbox("check EDA"):
             st.info("This is the first step in EDA, we need to understand the variables in the data set, like what are the input variables and what are the output variables? Then we need to understand the type of the variables in the data set, like is it Integer? A float value? Or a String value? Lastly we need to analyze if the variables are continuous or categorical. Gender is an example of categorical variable while height is an example of continuous variable")
         
@@ -354,7 +355,7 @@ def main():
             st.write("train.csv")
             
             
-            st.info(" for our reccomendation systems to work, we needed this data, we trined it and tested it using our models and we reached succes")
+            st.info(" for our recommendation systems to work, we needed this data, we trined it and tested it using our models and we reached succes")
             
     #Glossary page
     if page_selection == "Glossary":
