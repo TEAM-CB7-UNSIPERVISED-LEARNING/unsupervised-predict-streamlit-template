@@ -285,7 +285,7 @@ def main():
         #bargraph
             st.info("Bargragh")
         
-            st.image("resources/imgs/bargraph.png")
+            st.image("resources/imgs/rating.png")
         #piechart
         
             st.info("pichart")
@@ -294,7 +294,7 @@ def main():
         #histogram
             st.info("histogram")
         
-            st.image("resources/imgs/prouction.png")
+            st.image("resources/imgs/production.png")
             
             #wordcloud
         
@@ -304,7 +304,7 @@ def main():
         #bargraph
             st.info("bargraph")
         
-            st.image("resources/imgs/ratings.png")
+            st.image("resources/imgs/user.png")
             
         st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
