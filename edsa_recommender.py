@@ -206,13 +206,13 @@ def main():
         st.image("https://www.researchgate.net/profile/Lionel-Ngoupeyou-Tondji/publication/323726564/figure/fig5/AS:631605009846299@1527597777415/Content-based-filtering-vs-Collaborative-filtering-Source.png")
         if st.checkbox("overview"):
             st.write("### CONTENT BASED FILTERING")
-            st.image('https://miro.medium.com/max/1400/1*P63ZaFHlssabl34XbJgong.jpeg')
-            st.write('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
+            
+            st.info('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
         
 
             st.write('### COLLABORATIVE BASED FILTERING')
-            st.image('https://cdn-gcp.marutitech.com/wp-media/2017/06/f35bf62d-recommendation-engine-1.png')
-            st.write('builds a model from your past behavior (i.e. movies watched or selected by the you) as well as similar decisions made by other users.')
+            
+            st.info('builds a model from your past behavior (i.e. movies watched or selected by the you) as well as similar decisions made by other users.')
         
             
     # You may want to add more sections here for aspects such as an EDA,
