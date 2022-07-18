@@ -387,7 +387,7 @@ def main():
     #map location
     if page_selection == "map location":
         st.info("map location")
-        st.image("https://www.google.co.za/maps/@-25.7458176,28.1935872,12z")
+        st.image("https://th.bing.com/th/id/R.700eeb8c0fc6003653d2c6b62636ea07?rik=UM1w2kDnZLabkQ&riu=http%3a%2f%2fwww.orangesmile.com%2fcommon%2fimg_city_maps%2fjohannesburg-map-3.jpg&ehk=7Qk6U3f7VgXfTBvxDu32nZUOf%2fBcSqdtWlFT3NtB5RU%3d&risl=&pid=ImgRaw&r=0")
         
     #reviews page
     if page_selection == 'Reviews':
