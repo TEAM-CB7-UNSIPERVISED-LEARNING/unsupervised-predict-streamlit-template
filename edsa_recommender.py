@@ -204,7 +204,17 @@ def main():
         st.write("solution")
         st.write("we build this app to look for movies using collaborative filtering and contend basesd filtering recommendation sytems")
         st.image("https://www.researchgate.net/profile/Lionel-Ngoupeyou-Tondji/publication/323726564/figure/fig5/AS:631605009846299@1527597777415/Content-based-filtering-vs-Collaborative-filtering-Source.png")
+        if st.checkbox("overview"):
+            st.markdown("### CONTENT BASED FILTERING")
+            st.image('resources/imgs/content.png')
+            st.markdown('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
+        
 
+            st.markdown('### COLLABORATIVE BASED FILTERING')
+            st.image('resources/imgs/collaborative.png')
+            st.markdown('builds a model from your past behavior (i.e. movies watched or selected by the you) as well as similar decisions made by other users.')
+        
+            
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
     if page_selection == 'About':
