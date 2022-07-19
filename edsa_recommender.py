@@ -238,6 +238,7 @@ def main():
 
         if st.checkbox("Team mates"):
             st.info("Thembani Maswengani, Team Learder")
+            st.image("resources/imgs/thembani.JPEG")
             st.write("Github Account:thembani47 ")
             st.write("email: t.maswanganyi@gmail.com")
             st.write("Kaggle Account:Thembani Maswnganyi ")
