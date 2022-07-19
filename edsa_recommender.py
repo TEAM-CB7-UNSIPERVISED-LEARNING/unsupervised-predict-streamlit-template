@@ -260,7 +260,7 @@ def main():
             st.write("")
             
             st.info("Charmain Nhlapho")
-            st.image("resources/imgs/charmain.JPEG.jpg",use_column_width=True)
+            st.image("resources/imgs/chrmain.JPEG.jpg",use_column_width=True)
             st.write("Github Account:Charmain Nhlapho ")
             st.write("email: charmainlindelwa@gmail.com")
             st.write("Kaggle Account: Lindelwa Charmain")
