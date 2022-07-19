@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Welcome","About","Search for a movie","Recommender System","Dataset", "Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Glossary","Reviews","history",]
+    page_options = ["Welcome","About","Search for a movie","Recommender System","Dataset", "Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Glossary","Reviews","History",]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -202,9 +202,9 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("solution")
-        st.info("we build this app to look for movies using collaborative filtering and contend basesd filtering recommendation sytems")
+        st.info("We build this app to look for movies using collaborative filtering and contend basesd filtering recommendation system")
         st.image("https://www.researchgate.net/profile/Lionel-Ngoupeyou-Tondji/publication/323726564/figure/fig5/AS:631605009846299@1527597777415/Content-based-filtering-vs-Collaborative-filtering-Source.png")
-        if st.checkbox("overview"):
+        if st.checkbox("Overview"):
             st.write("### CONTENT BASED FILTERING")
             
             st.info('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
@@ -370,7 +370,7 @@ def main():
             st.write("train.csv")
             
             
-            st.info(" for our recommendation systems to work, we needed this data, we trined it and tested it using our models and we reached succes")
+            st.info(" For our recommendation systems to work, we needed this data, we trained it and tested it using our models and we reached success.")
             
     #Glossary page
     if page_selection == "Glossary":
@@ -407,9 +407,9 @@ def main():
         
     #reviews page
     if page_selection == 'Reviews':
-        st.info("Here at CB7 we appriciate you thoughts and feedback, let us know what you think about our product and service, thank you in advance")
-        st.image("https://media.istockphoto.com/photos/your-feedback-matters-picture-id688306678")
-        st.title("feel free to get in touch with us")
+        st.info("Here at CB7 we appriciate your thoughts and feedback, let us know what you think about our product and service, thank you in advance.")
+        st.image("resources/imgs/R (1).JFIF")
+        st.title("Feel free to get in touch with us")
         st.markdown('''<span style="color:blue"> **Help us improve this app by rating it. Tell us how to give you a better user experience.** </span>''', unsafe_allow_html=True)
         @st.cache(allow_output_mutation=True)
         def get_data():
@@ -418,7 +418,6 @@ def main():
         name = st.text_input("User name")
         inputs = st.text_input("Let us improve your user experience!!!")
         rate = st.slider("Rate us", 0, 5)
-        st.info("thank you in advance")
         option = st.radio("select a Response",("Posetive","Negative","Moderate","room for improvement"))
         if st.button("Submit"):
             get_data().append({"User name": name, "Suggestion": inputs,"rating":rate})
@@ -429,9 +428,9 @@ def main():
         #st.image(('resources/imgs/our contact2.PNG'), use_column_width=True)
         
         
-        st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
+        st.info("Thank you for your time, make sure you use our service again for more accurate movie recommendations.")
         
-    if page_selection == "history":
+    if page_selection == "History":
         st.write("History of recommender systems")
         st.info("A brief and superficial overview")
         if st.checkbox("checkbox"):
