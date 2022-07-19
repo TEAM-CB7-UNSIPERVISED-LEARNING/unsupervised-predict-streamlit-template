@@ -105,7 +105,7 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Search for a movie":
         st.title("Search for Movies")
-        st.image(('resources/imgs/countdown.gif'), use_column_width=True)
+        st.image(('resources/imgs/R.gif'), use_column_width=True)
         st.markdown('Please Refer to the About Machine Learning Page to learn more about the techniques used to recommend movies. If you decide not to use the recommender systems you can use this page to filter movies based on the rating of the movie , the year in which the movie was released and the genre of the movies. After you change the filter you will be left with movies that are specific to that filter used. Then when you scroll down you will see the movie name and the link to a youtube trailer of that movie. When you click the link ,you will see a page on youtube for that specific movie and you can watch the trailer and see if you like it. This is an alternative method to you if you are not satisfied with the recommender engine . Enjoy! ', unsafe_allow_html=True)
         # Movies
         df = pd.read_csv('resources/data/movies.csv')
