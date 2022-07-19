@@ -253,6 +253,7 @@ def main():
             st.write("")
             
             st.info("Keamogetswe Sibanyoni")
+            st.image("resources/imgs/kea.JPEG.jpg",use_column_width=True)
             st.write("Github Account: Keankie ")
             st.write("email: Keamogetswe.Sibanyoni@fnb.co.za")
             st.write("Kaggle Account: Keamogetswe Sibanyoni ")
@@ -271,6 +272,7 @@ def main():
             st.write("")
             
             st.info("Bethuel Masango")
+            st.image("resources/imgs/msizwane.JPEG.jpeg",use_column_width=True)
             st.write("Github Account: 123Masangobethuel")
             st.write("email: bethuelmas94@gmail.com")
             st.write("Kaggle Account:Bethuelsizwemasango ")
