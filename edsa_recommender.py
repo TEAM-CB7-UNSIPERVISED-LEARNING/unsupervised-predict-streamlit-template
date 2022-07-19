@@ -238,7 +238,7 @@ def main():
 
         if st.checkbox("Team mates"):
             st.info("Thembani Maswengani, Team Learder")
-            st.image("resources/imgs/thembani.JPEG")
+            st.image("resources/imgs/thembani.JPEG",use_column_width=True)
             st.write("Github Account:thembani47 ")
             st.write("email: t.maswanganyi@gmail.com")
             st.write("Kaggle Account:Thembani Maswnganyi ")
@@ -246,7 +246,7 @@ def main():
             st.write("")
             
             st.info("Katlego Maponya, Team Coordinator")
-            st.image("resources/imgs/katlego.JPEG.jpg")
+            st.image("resources/imgs/katlego.JPEG.jpg",use_column_width=True)
             st.write("Github Account:Katlego Maponya 015khai ")
             st.write("email: mr015khai@gmail.com")
             st.write("Kaggle Account:Katlego Maponya ")
