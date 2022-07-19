@@ -246,7 +246,7 @@ def main():
             st.write("")
             
             st.info("Katlego Maponya, Team Coordinator")
-            st.image("resources/imgs/katlego.JPEG")
+            st.image("resources/imgs/katlego.JPEG.jpg")
             st.write("Github Account:Katlego Maponya 015khai ")
             st.write("email: mr015khai@gmail.com")
             st.write("Kaggle Account:Katlego Maponya ")
