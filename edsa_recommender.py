@@ -413,7 +413,7 @@ def main():
     #reviews page
     if page_selection == 'Reviews':
         st.info("Here at CB7 we appriciate your thoughts and feedback, let us know what you think about our product and service, thank you in advance.")
-        st.image("resources/imgs/R (1).JFIF")
+        st.image("resources/imgs/feedback-digital.jpg")
         st.title("Feel free to get in touch with us")
         st.markdown('''<span style="color:blue"> **Help us improve this app by rating it. Tell us how to give you a better user experience.** </span>''', unsafe_allow_html=True)
         @st.cache(allow_output_mutation=True)
