@@ -317,6 +317,12 @@ def main():
             st.info("Wordcloud")
             st.write("No genres listed,Documentary, Comedy and Drama are popular keywords.Words like 'Drama', 'Romance', ect. are all over the wordcloud. This is because most films, regardless of the genre seem to have some element of drama")
             st.image("resources/imgs/cloud 2.png")
+            
+        #wordcloud
+            st.info("Wordcloud")
+            st.write("We can observe that Man, Girl and Love are larger then the rest, which informs us that they are the most popular title words.Wind, Hill, Sex are relatively small which tells us that they are relatively less popular than other title words.")
+            st.image("resources/imgs/cloud 3.png")
+        
         st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
         
