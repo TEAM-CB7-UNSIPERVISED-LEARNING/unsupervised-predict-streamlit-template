@@ -322,6 +322,19 @@ def main():
             st.info("Wordcloud")
             st.write("We can observe that Man, Girl and Love are larger then the rest, which informs us that they are the most popular title words.Wind, Hill, Sex are relatively small which tells us that they are relatively less popular than other title words.")
             st.image("resources/imgs/cloud 3.png")
+            
+            st.write("Content-Based Filtering")
+            st.info("The content-based approach uses additional information about users and/or items. This filtering method uses item features to recommend other items similar to what the user likes and also based on their previous actions or explicit feedback. If we consider the example for a movies recommender system, the additional information can be, the age, the sex, the job or any other personal information for users as well as the category, the main actors, the duration or other characteristics for the movies i.e the items.")
+            
+            st.info("The main idea of content-based methods is to try to build a model, based on the available “features”, that explain the observed user-item interactions. Still considering users and movies, we can also create the model in such a way that it could provide us with an insight into why so is happening. Such a model helps us in making new predictions for a user pretty easily, with just a look at the profile of this user and based on its information, to determine relevant movies to suggest.")
+            
+            st.info("We can make use of a Utility Matrix for Content-Based Methods. A Utility Matrix can help signify the user’s preference for certain items. With the data gathered from the user, we can find a relation between the items which are liked by the user as well as those which are disliked, for this purpose the utility matrix can be put to best use. We assign a particular value to each user-item pair, this value is known as the degree of preference and a matrix of the user is drawn with the respective items to identify their preference relationship.")
+            
+            st.write("Challenges faced with Content-based filtering")
+            
+            st.info("Content-based methods seem to suffer far less from the cold start problem than collaborative approaches because new users or items can be described by their characteristics i.e the content and so relevant suggestions can be done for these new entities. Only new users or items with previously unseen features will logically suffer from this drawback, but once the system is trained enough, this has little to no chance to happen. Basically, it hypothesizes that if a user was interested in an item in the past, they will once again be interested in the same thing in the future. Similar items are usually grouped based on their features. User profiles are constructed using historical interactions or by explicitly asking users about their interests. There are other systems, not considered purely content-based, which utilize user personal and social data.")
+            
+            st.image("https://camo.githubusercontent.com/a5f31b84eaab0fd04616953a3e8d62b28952ea1485b73240cee5290e5461dd2f/68747470733a2f2f6769746875622e636f6d2f5445414d2d4342372d554e534950455256495345442d4c4541524e494e472f64617461736574732f626c6f622f6d61696e2f315f3151615879447543764d6d635a4b542d456e7554412d32303438783832322e6a7065673f7261773d74727565")
         
         st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
