@@ -288,30 +288,35 @@ def main():
         
         #IMAGE
         #bargraph
-            st.info("Bargragh")
-            st.write("thus graph show the number of rating distribution")
+            st.info("Bargraph")
+            st.write("seaborn.barplot A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle and provides some indication of the uncertainty around that estimate using error bars. Bar plots include 0 in the quantitative axis range, and they are a good choice when 0 is a meaningful value for the quantitative variable, and you want to make comparisons against it.For datasets where 0 is not a meaningful value, a point plot will allow you to focus on differences between levels of one or more categorical variables.It is also important to keep in mind that a bar plot shows only the mean (or other estimator) value, but in many cases it may be more informative to show the distribution of values at each level of the categorical variables. In that case, other approaches such as a box or violin plot may be more appropriate.")
             st.image("resources/imgs/rating.png")
         #piechart
         
             st.info("pichart")
-            st.write("this graph shows the distribution percentage of ratings")
+            st.write("The fractional area of each wedge is given by x/sum(x). If sum(x) < 1, then the values of x give the fractional area directly and the array will not be normalized. The resulting pie will have an empty wedge of size 1 - sum(x).The wedges are plotted counterclockwise, by default starting from the x-axis.")
             st.image("resources/imgs/pichart.png")
+            
         #histogram
-            st.info("histogram")
-            st.write("this graph shows the number of movies produced per production.")
+            st.info("bargraph")
+            st.write("From bar plot we got the Top 15 Years, we can see that from 2004, more movies were released. More than 1000 movies were released from 2002 going up to 2015. 2015, 2016, 2014 and 2017 has higher numbers of released movies, with a count of more than 2000 released movies.")
             st.image("resources/imgs/production.png")
             
             #wordcloud
         
             st.info("wordcloud")
-            st.write("The visual above shows which words are commonly used when movies are titled")
+            st.write("from the word cloud we can see 2015, 2016, 2014 have the most frequency, but this doesn't give us much to understand the year with most released movies, even though we can see that the Gen Z (2000s) released more movies compared to Millennials (1990s) movies. We can conclude that more movies are released in the 2000s as the streaming technology is also growing.")
             st.image("resources/imgs/cloud.png")
             
         #bargraph
             st.info("bargraph")
-            st.write("this graph shows the number of user ID")
+            st.write("User ID 72315 has more ratings compared to other users, the ratings of more than 12000, the second, third, fourth and number five on the plot above has ratings from 3050 - 3680, which is not even half of the first user. the sixth to number ten has 2000 ratings. this shows that users do rate movies.")
             st.image("resources/imgs/user.png")
             
+        #wordcloud
+            st.info("Wordcloud")
+            st.write("No genres listed,Documentary, Comedy and Drama are popular keywords.Words like 'Drama', 'Romance', ect. are all over the wordcloud. This is because most films, regardless of the genre seem to have some element of drama")
+            st.image("resources/imgs/cloud 2.png")
         st.info("Source: The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB")
         st.image("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-graphic-concept_73426-102.jpg?w=1060")
         
