@@ -401,7 +401,7 @@ def main():
             
             
             st.info(" For our recommendation systems to work, we needed this data, we trained it and tested it using our models and we reached success.")
-            st.image("https://pin.it/2e6x0qd")        
+            st.image("https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg?cs=srgb&dl=pexels-pixabay-265685.jpg&fm=jpg")        
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
