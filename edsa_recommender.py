@@ -268,7 +268,7 @@ def main():
             st.write("")
             
             st.info("Sydney Abrahams")
-            st.image("resources/imgs/sydney.JPEG.jpeg",use_column_width=5)
+            st.image("resources/imgs/sydney.JPEG.jpeg",use_column_width=100)
             st.write("Github Account:sidney48  ")
             st.write("email: mailto:sidneyabrahamsrsa@gmail.com ")
             st.write("Kaggle Account: Sidney Abrahams ")
