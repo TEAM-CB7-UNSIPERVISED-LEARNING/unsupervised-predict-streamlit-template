@@ -200,7 +200,7 @@ def main():
         st.write('## ** * Where Movie Lovers Belong...* **')
         st.info("You are welcomed to become a member of the family of movie Enthusiasts, so relax you mind and take it easy")
         #st.image('resources/imgs/Movie-Show-GIF-960.gif', use_column_width=True)
-        st.image("resources/imgs/film.jpg")
+        st.image("https://images.pexels.com/photos/2507025/pexels-photo-2507025.jpeg?cs=srgb&dl=pexels-quark-studio-2507025.jpg&fm=jpg")
         
     
     if page_selection == "Solution Overview":
