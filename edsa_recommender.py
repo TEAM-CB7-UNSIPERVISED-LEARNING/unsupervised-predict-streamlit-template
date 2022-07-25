@@ -185,7 +185,7 @@ def main():
                 st.write(row['title'])
                 st.write(youtube_link(title = row['title']))
                 
-    st.image("https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?cs=srgb&dl=pexels-donald-tong-66134.jpg&fm=jpg")
+    st.image("https://miro.medium.com/max/1400/0*ckAOzr7BW6fhFeGK.jpg")
                 
 
 
