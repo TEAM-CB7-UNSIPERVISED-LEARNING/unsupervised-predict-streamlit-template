@@ -184,6 +184,9 @@ def main():
             for _, row in df.iterrows():
                 st.write(row['title'])
                 st.write(youtube_link(title = row['title']))
+                
+    st.image("https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?cs=srgb&dl=pexels-donald-tong-66134.jpg&fm=jpg")
+                
 
 
         
