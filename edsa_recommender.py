@@ -380,7 +380,7 @@ def main():
             st.write("Thursday - 08:00 to 18:00")
             st.write("friday - 08:00 to 18:00")
             st.info("weekends - 08:00 to 13:00")
-        
+        st.image("https://www.pinterest.com/pin/creating-your-own-animation-is-easy-with-citrus-ink-studios-our-free-animated-video-maker-perfe--838373286874356262/")
     #dataset page
     if page_selection == "Dataset":
         st.info("Datasets")
