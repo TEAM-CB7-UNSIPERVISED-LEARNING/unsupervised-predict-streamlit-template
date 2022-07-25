@@ -424,7 +424,7 @@ def main():
             
             st.info("Abstract Since their introduction in the early 1990's, automated recommender systems have revolutionized the marketing and delivery of commerce and content by providing personalized recommendations and predictions over a variety of large and complex product offerings")
             
-    
+        st.image("https://i.pinimg.com/564x/62/98/c9/6298c9062d27ae97f168d4ac61f04d4a.jpg")
         
         st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
     #map location
