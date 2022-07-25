@@ -214,7 +214,8 @@ def main():
             st.write('### COLLABORATIVE BASED FILTERING')
             
             st.info('builds a model from your past behavior (i.e. movies watched or selected by the you) as well as similar decisions made by other users.')
-        
+
+            st.image("https://camo.githubusercontent.com/a5f31b84eaab0fd04616953a3e8d62b28952ea1485b73240cee5290e5461dd2f/68747470733a2f2f6769746875622e636f6d2f5445414d2d4342372d554e534950455256495345442d4c4541524e494e472f64617461736574732f626c6f622f6d61696e2f315f3151615879447543764d6d635a4b542d456e7554412d32303438783832322e6a7065673f7261773d74727565")
             
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
