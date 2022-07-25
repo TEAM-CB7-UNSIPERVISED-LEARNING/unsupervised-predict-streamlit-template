@@ -402,7 +402,7 @@ def main():
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
-        st.image("https://www.termcoord.eu/wp-content/uploads/2021/08/Multilingual-digital-terminology-today.png")
+        st.image("https://c.tenor.com/6_J7otCFMFsAAAAS/dictionary-magnifying-glass.gif")
         if st.checkbox("checkbox"):
             st.write(" contend based filtereing - item data focused")
             st.info('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
