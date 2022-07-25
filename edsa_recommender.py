@@ -402,7 +402,7 @@ def main():
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
-        st.image("http://www.productschool.com/product-glossary")
+        st.image("http://www.productschool.com/product-glossary/")
         if st.checkbox("checkbox"):
             st.write(" contend based filtereing - item data focused")
             st.info('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
