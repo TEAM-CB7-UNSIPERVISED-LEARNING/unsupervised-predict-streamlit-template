@@ -367,8 +367,8 @@ def main():
     #Contuct Deteils
     if page_selection =="Contact Details":
         st.write("Contact Details")
-        st.info("contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
-        st.write("avilability of stuff to answer your calls", "during the week mon to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
+        st.info("Contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
+        st.write("Availability of stuff to answer your calls", "during the week monday to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
         
         st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
         st.info("Mail - TeamCB7@gmail.com")
@@ -429,7 +429,7 @@ def main():
             
             st.image("https://i.pinimg.com/564x/62/98/c9/6298c9062d27ae97f168d4ac61f04d4a.jpg")
         
-        st.info("thank you for you time, make sure you use our service again for more accurate movie reccomendations")
+        st.info("Thank you for your time, make sure you use our service again for more accurate movie recommendations")
     #map location
     if page_selection == "map location":
         st.info("map location")
