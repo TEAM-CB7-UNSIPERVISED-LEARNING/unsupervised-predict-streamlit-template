@@ -172,25 +172,3 @@ def content_model(movie_list,top_n=10):
     asscr = ratings[ratings['movieId'].isin(mgen2['movieId'].values)][['movieId', 'rating']]
     top_movies = (asscr.groupby(['movieId']).mean().reset_index()).sort_values('rating', ascending =False)[:top_n]
     return list((nmovies[nmovies['movieId'].isin(top_movies['movieId'].values)]['title']).values)
-def youtube_link(title):
-        
-            """This function takes in the title of a movie and returns a Search query link to youtube
-    
-            INPUT: ('Avengers age of ultron')
-            -----------
-    
-            OUTPUT: https://www.youtube.com/results?search_query=The+little+Mermaid&page=1
-            ----------
-            """
-            title = title.replace(' ','+')
-            base = "https://www.youtube.com/results?search_query="
-            q = title
-            page = "&page=1"
-            URL = base + q + page
-            return URL            
-        if len(df) !=0:           
-            for _, row in df.iterrows():
-                st.write(row['title'])
-                st.write(youtube_link(title = row['title']))
-                
-            st.image("https://miro.medium.com/max/1400/0*ckAOzr7BW6fhFeGK.jpg")
