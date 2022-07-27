@@ -47,7 +47,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Welcome","About","Search for a movie","Recommender System","Dataset", "Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Glossary","Reviews","History",]
+    page_options = ["Welcome","About","Search for a movie","Collaborative","Recommender System","Dataset", "Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Glossary","Reviews","History",]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -98,7 +98,8 @@ def main():
                 except:
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
-
+                              
+    if page_selection == "Collaborative":
         # Script dependencies
         import pandas as pd
         import numpy as np
