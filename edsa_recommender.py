@@ -97,7 +97,7 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-    if page_selection == "Recommender Syetem":
+    if page_selection == "Recommender System":
         df = pd.read_csv('resources/data/movies.csv')
         rating = pd.read_csv('resources/data/ratings.csv')
         
