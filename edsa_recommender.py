@@ -90,9 +90,65 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
                     
-                    def youtube_link(title):
-            
-                     """This function takes in the title of a movie and returns a Search query link to youtube
+                    df = pd.read_csv('resources/data/movies.csv')
+        rating = pd.read_csv('resources/data/ratings.csv')
+        
+        def explode(df, lst_cols, fill_value='', preserve_index=False):
+            import numpy as np
+             # make sure `lst_cols` is list-alike
+            if (lst_cols is not None
+                    and len(lst_cols) > 0
+                    and not isinstance(lst_cols, (list, tuple, np.ndarray, pd.Series))):
+                lst_cols = [lst_cols]
+            # all columns except `lst_cols`
+            idx_cols = df.columns.difference(lst_cols)
+            # calculate lengths of lists
+            lens = df[lst_cols[0]].str.len()
+            # preserve original index values    
+            idx = np.repeat(df.index.values, lens)
+            # create "exploded" DF
+            res = (pd.DataFrame({
+                        col:np.repeat(df[col].values, lens)
+                        for col in idx_cols},
+                        index=idx)
+                    .assign(**{col:np.concatenate(df.loc[lens>0, col].values)
+                            for col in lst_cols}))
+            # append those rows that have empty lists
+            if (lens == 0).any():
+                # at least one list in cells is empty
+                res = (res.append(df.loc[lens==0, idx_cols], sort=False)
+                            .fillna(fill_value))
+            # revert the original index order
+            res = res.sort_index()   
+            # reset index if requested
+            if not preserve_index:        
+                res = res.reset_index(drop=True)
+            return res 
+        movie_data = pd.merge(rating, df, on='movieId')
+        movie_data['year'] = movie_data.title.str.extract('(\(\d\d\d\d\))',expand=False)
+        #Removing the parentheses
+        movie_data['year'] = movie_data.year.str.extract('(\d\d\d\d)',expand=False)
+
+        movie_data.genres = movie_data.genres.str.split('|')
+        movie_rating = st.sidebar.number_input("Pick a rating ",0.5,5.0, step=0.5)
+
+        movie_data = explode(movie_data, ['genres'])
+        movie_title = movie_data['genres'].unique()
+        title = st.selectbox('Genre', movie_title)
+        movie_data['year'].dropna(inplace = True)
+        movie_data = movie_data.drop(['movieId','timestamp','userId'], axis = 1)
+        year_of_movie_release = movie_data['year'].sort_values(ascending=False).unique()
+        release_year = st.selectbox('Year', year_of_movie_release)
+
+        movie = movie_data[(movie_data.rating == movie_rating)&(movie_data.genres == title)&(movie_data.year == release_year)]
+        df = movie.drop_duplicates(subset = ["title"])
+        if len(df) !=0:
+            st.write(df)
+        if len(df) ==0:
+            st.write('We have no movies for that rating!')        
+        def youtube_link(title):
+        
+            """This function takes in the title of a movie and returns a Search query link to youtube
     
             INPUT: ('Avengers age of ultron')
             -----------
@@ -110,9 +166,12 @@ def main():
             for _, row in df.iterrows():
                 st.write(row['title'])
                 st.write(youtube_link(title = row['title']))
+                
+            st.image("https://miro.medium.com/max/1400/0*ckAOzr7BW6fhFeGK.jpg")
+                
+                    
+                    
         
-
-
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
