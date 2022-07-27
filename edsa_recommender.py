@@ -95,7 +95,7 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-    def youtube_link(title):
+        def youtube_link(title):
     
             """This function takes in the title of a movie and returns a Search query link to youtube
     
