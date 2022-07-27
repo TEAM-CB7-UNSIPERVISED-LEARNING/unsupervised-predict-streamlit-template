@@ -95,6 +95,8 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
+        movie = movie_data[(movie_data.rating == movie_rating)&(movie_data.genres == title)&(movie_data.year == release_year)]
+        df = movie.drop_duplicates(subset = ["title"])
         if len(df) !=0:
             st.write(df)
         if len(df) ==0:
