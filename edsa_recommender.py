@@ -34,6 +34,22 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# Script dependencies
+import scipy as sp
+import pickle 
+import copy
+from surprise import Reader, Dataset
+from surprise import SVD, NormalPredictor, BaselineOnly, KNNBasic, NMF
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
+
+# Importing data
+movies_df = pd.read_csv('resources/data/movies.csv',sep = ',')
+ratings_df = pd.read_csv('resources/data/ratings.csv')
+ratings_df.drop(['timestamp'], axis=1,inplace=True)
+
+# We make use of an SVD model trained on a subset of the MovieLens 10k dataset.
+model=pickle.load(open('resources/models/SVD.pkl', 'rb'))
 # Custom Libraries
 from utils.data_loader import load_movie_titles
 from recommenders.collaborative_based import collab_model
@@ -98,27 +114,9 @@ def main():
                 except:
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
-                              
+
     if page_selection == "Collaborative":
-        # Script dependencies
-        import pandas as pd
-        import numpy as np
-        import scipy as sp
-        import pickle
-        import copy
-        from surprise import Reader, Dataset
-        from surprise import SVD, NormalPredictor, BaselineOnly, KNNBasic, NMF
-        from sklearn.metrics.pairwise import cosine_similarity
-        from sklearn.feature_extraction.text import CountVectorizer
-
-        # Importing data
-        movies_df = pd.read_csv('resources/data/movies.csv',sep = ',')
-        ratings_df = pd.read_csv('resources/data/ratings.csv')
-        ratings_df.drop(['timestamp'], axis=1,inplace=True)
-
-        # We make use of an SVD model trained on a subset of the MovieLens 10k dataset.
-        model=pickle.load(open('resources/models/SVD.pkl', 'rb'))
-
+        
         def prediction_item(item_id):
             """Map a given favourite movie to users within the
             MovieLens dataset with the same preference.
