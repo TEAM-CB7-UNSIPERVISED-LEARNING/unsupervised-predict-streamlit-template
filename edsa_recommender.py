@@ -95,35 +95,6 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-        movie = movie_data[(movie_data.rating == movie_rating)&(movie_data.genres == title)&(movie_data.year == release_year)]
-        df = movie.drop_duplicates(subset = ["title"])
-        if len(df) !=0:
-            st.write(df)
-        if len(df) ==0:
-            st.write('We have no movies for that rating!')        
-        def youtube_link(title):
-    
-            """This function takes in the title of a movie and returns a Search query link to youtube
-    
-            INPUT: ('Avengers age of ultron')
-            -----------
-    
-            OUTPUT: https://www.youtube.com/results?search_query=The+little+Mermaid&page=1
-            ----------
-            """
-            title = title.replace(' ','+')
-            base = "https://www.youtube.com/results?search_query="
-            q = title
-            page = "&page=1"
-            URL = base + q + page
-            return URL            
-        if len(df) !=0:           
-            for _, row in df.iterrows():
-                st.write(row['title'])
-                st.write(youtube_link(title = row['title']))
-                
-            st.image("https://miro.medium.com/max/1400/0*ckAOzr7BW6fhFeGK.jpg")
-                
                 
     
     if page_selection == "Search for a movie":
@@ -187,28 +158,7 @@ def main():
             st.write(df)
         if len(df) ==0:
             st.write('We have no movies for that rating!')        
-        def youtube_link(title):
-    
-            """This function takes in the title of a movie and returns a Search query link to youtube
-    
-            INPUT: ('Avengers age of ultron')
-            -----------
-    
-            OUTPUT: https://www.youtube.com/results?search_query=The+little+Mermaid&page=1
-            ----------
-            """
-            title = title.replace(' ','+')
-            base = "https://www.youtube.com/results?search_query="
-            q = title
-            page = "&page=1"
-            URL = base + q + page
-            return URL            
-        if len(df) !=0:           
-            for _, row in df.iterrows():
-                st.write(row['title'])
-                st.write(youtube_link(title = row['title']))
-                
-            st.image("https://miro.medium.com/max/1400/0*ckAOzr7BW6fhFeGK.jpg")
+       
                 
 
 
