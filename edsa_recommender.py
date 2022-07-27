@@ -89,32 +89,34 @@ def main():
                 except:
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
-                    
-                def youtube_link(title):
-                
-                    """This function takes in the title of a movie and returns a Search query link to youtube
-            
-                    INPUT: ('Avengers age of ultron')
-                    -----------
-            
-                    OUTPUT: https://www.youtube.com/results?search_query=The+little+Mermaid&page=1
-                    ----------
-                    """
-                    title = title.replace(' ','+')
-                    base = "https://www.youtube.com/results?search_query="
-                    q = title
-                    page = "&page=1"
-                    URL = base + q + page
-                    return URL            
-                if len(df) !=0:           
-                    for _, row in df.iterrows():
-                        st.write(row['title'])
-                        st.write(youtube_link(title = row['title']))
+        
 
 
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
+    def youtube_link(title):
+    
+            """This function takes in the title of a movie and returns a Search query link to youtube
+    
+            INPUT: ('Avengers age of ultron')
+            -----------
+    
+            OUTPUT: https://www.youtube.com/results?search_query=The+little+Mermaid&page=1
+            ----------
+            """
+            title = title.replace(' ','+')
+            base = "https://www.youtube.com/results?search_query="
+            q = title
+            page = "&page=1"
+            URL = base + q + page
+            return URL            
+    if len(df) !=0:           
+            for _, row in df.iterrows():
+                st.write(row['title'])
+                st.write(youtube_link(title = row['title']))
+    
+    
     if page_selection == "Search for a movie":
         st.title("Search for Movies")
         st.image(('resources/imgs/R.gif'), use_column_width=True)
