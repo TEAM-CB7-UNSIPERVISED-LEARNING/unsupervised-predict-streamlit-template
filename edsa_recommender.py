@@ -90,7 +90,15 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
                     
-                    df = pd.read_csv('resources/data/movies.csv')
+                    
+                    
+                    
+        
+    # -------------------------------------------------------------------
+
+    # ------------- SAFE FOR ALTERING/EXTENSION -------------------
+    if page_selection == "Recommender Syetem":
+        df = pd.read_csv('resources/data/movies.csv')
         rating = pd.read_csv('resources/data/ratings.csv')
         
         def explode(df, lst_cols, fill_value='', preserve_index=False):
@@ -169,12 +177,6 @@ def main():
                 
             st.image("https://miro.medium.com/max/1400/0*ckAOzr7BW6fhFeGK.jpg")
                 
-                    
-                    
-        
-    # -------------------------------------------------------------------
-
-    # ------------- SAFE FOR ALTERING/EXTENSION -------------------
                 
     
     if page_selection == "Search for a movie":
