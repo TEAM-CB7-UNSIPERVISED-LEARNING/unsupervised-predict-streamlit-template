@@ -110,11 +110,11 @@ def main():
             q = title
             page = "&page=1"
             URL = base + q + page
-            return URL            
-    if len(df) !=0:           
-            for _, row in df.iterrows():
-                st.write(row['title'])
-                st.write(youtube_link(title = row['title']))
+            return URL
+            if len(df) !=0:           
+                for _, row in df.iterrows():
+                    st.write(row['title'])
+                    st.write(youtube_link(title = row['title']))
     
     
     if page_selection == "Search for a movie":
