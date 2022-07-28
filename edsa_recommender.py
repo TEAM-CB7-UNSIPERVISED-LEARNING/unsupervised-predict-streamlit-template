@@ -38,7 +38,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Welcome","About","Search for a movie","Recommender System","Solution Overview","Team Profile","Data analysis","Information","Glossary","Reviews","History",]
+    page_options = ["Welcome","About","Search for a movie","Recommender System","Solution Overview","Team Profile","Data analysis","Information","Reviews","History",]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
