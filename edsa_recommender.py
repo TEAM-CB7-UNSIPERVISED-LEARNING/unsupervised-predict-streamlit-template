@@ -38,7 +38,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Welcome","About","Search for a movie","Recommender System","Dataset", "Solution Overview","Team Profile","Data analysis", "Contact Details","Information","Glossary","Reviews","History",]
+    page_options = ["Welcome","About","Search for a movie","Recommender System","Solution Overview","Team Profile","Data analysis","Information","Glossary","Reviews","History",]
     
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -228,6 +228,34 @@ def main():
         st.subheader("Data Description")
         st.info("The dataset used for the movie recommender app consists of several million 5-star ratings obtained from users of the online MovieLens movie recommendation service. The data for the MovieLens dataset is maintained by the GroupLens research group in the Department of Computer Science and Engineering at the University of Minnesota. Additional movie content data was legally scraped from IMDB.")
         st.image("https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg")
+        
+        st.write("Glossary")
+        st.write("Glossary of words used that need further explanations")
+        st.image("https://agsd.org.uk/wp-content/uploads/2019/11/glossary-shutterstock-508906084.jpg")
+        if st.checkbox("checkbox"):
+            st.write(" contend based filtereing - item data focused")
+            st.info('Uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.')
+        
+            st.write("collabarative filtereing - user data focused")
+            st.info('builds a model from your past behavior (i.e. movies watched or selected by the you) as well as similar decisions made by other users.')
+        
+            st.write("Hybrid Recommendations - uses both item data and user data")
+            
+            st.write("Enlightennt about recmmender sytems background")
+            
+            st.write("Who invented recommendation system?")
+            
+            st.info("The Xerox Palo Alto Research Center (PARC) invented Tapestry to address this issue, and in so doing, created one of the first recommender systems.")
+            
+            st.write("The basics of recommender systems were founded by researches into cognition science [1] and information retrieval [2], and its first manifestation was the Usenet communication system created by Duke University in the second half of the 1970s [3], where users were able to share textual content with each other.")
+            
+            st.write("When were automated recommender systems first developed and deployed?")
+            
+            st.info("Abstract Since their introduction in the early 1990's, automated recommender systems have revolutionized the marketing and delivery of commerce and content by providing personalized recommendations and predictions over a variety of large and complex product offerings")
+            
+            st.image("https://i.pinimg.com/564x/62/98/c9/6298c9062d27ae97f168d4ac61f04d4a.jpg")
+        
+        st.info("thank you for you time, make sure you use our service again for more accurate movie recommendations")
 
     # Building Team Page
     if page_selection == "Team Profile":
