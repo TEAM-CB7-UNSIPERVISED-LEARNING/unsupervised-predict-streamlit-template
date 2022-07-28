@@ -230,7 +230,7 @@ def main():
         st.image("https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg")
         
         st.write("Glossary")
-        st.write("Glossary of words used that need further explanations")
+        st.info("Glossary of words used that need further explanations")
         st.image("https://agsd.org.uk/wp-content/uploads/2019/11/glossary-shutterstock-508906084.jpg")
         if st.checkbox("checkbox"):
             st.write(" contend based filtereing - item data focused")
