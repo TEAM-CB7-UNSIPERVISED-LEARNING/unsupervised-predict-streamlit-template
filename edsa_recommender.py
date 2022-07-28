@@ -367,6 +367,7 @@ def main():
         st.image("https://miro.medium.com/max/1400/0*GN1m1Gemqx4K_lv1")
         st.subheader("Raw data and Labels")
         if st.checkbox("check raw data"):
+            st.info("Raw Data Used that was used to test and train our models")
             st.write("movies.csv")
             st.write("ratings.csv")
             st.write("genome_scores.csv")
@@ -375,48 +376,17 @@ def main():
             st.write("tags.csv")
             st.write("test.csv")
             st.write("train.csv")
+            
+            st.info(" For our recommendation systems to work, we needed this data, we trained it and tested it using our models and we reached success.")
+            st.image("https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg?cs=srgb&dl=pexels-pixabay-265685.jpg&fm=jpg") 
             
             st.write("take a look at the picture below, and in a nutshell understand the benefits of the reccomendatin system")
             st.image("https://raw.githubusercontent.com/TEAM-CB7-UNSIPERVISED-LEARNING/datasets/main/recommendation-system.webp?raw=true")
             
     #Contuct Deteils
-    if page_selection =="Contact Details":
-        st.write("Contact Details")
-        st.info("contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
-        st.write("avilability of stuff to answer your calls", "during the week mon to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
-        
-        st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
-        st.info("Mail - TeamCB7@gmail.com")
-        st.write("facebook - ClubCB7")
-        st.write("Tweeter - @TEAMCB7")
-        st.write("whatsap - 0814466788")
-        st.write("mobile - 0792233448")
-        if st.checkbox("check availability of staff"):
-            st.write("monday - 08:00 to 18:00")
-            st.write("Tuesday - 08:00 to 18:00 ")
-            st.write("wednesday - 08:00 to 18:00")
-            st.write("Thursday - 08:00 to 18:00")
-            st.write("friday - 08:00 to 18:00")
-            st.info("weekends - 08:00 to 13:00")
-        st.image("https://i.pinimg.com/originals/e6/d2/27/e6d22708bcabc0b47b837a5da9794df0.gif")
+    
     #dataset page
-    if page_selection == "Dataset":
-        st.info("Datasets")
-        st.image("https://intellipaat.com/mediaFiles/2018/07/Structured-Data-Vs.-Unstructured-Data.png")
-        st.info("Raw Data Used that was used to test and train our models")
-        if st.checkbox("check raw data"):
-            st.write("movies.csv")
-            st.write("ratings.csv")
-            st.write("genome_scores.csv")
-            st.write("genome_tags.csv")
-            st.write("imdb_data.csv")
-            st.write("tags.csv")
-            st.write("test.csv")
-            st.write("train.csv")
-            
-            
-            st.info(" For our recommendation systems to work, we needed this data, we trained it and tested it using our models and we reached success.")
-            st.image("https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg?cs=srgb&dl=pexels-pixabay-265685.jpg&fm=jpg")        
+    
     #Glossary page
     if page_selection == "Glossary":
         st.write("Glossary of words used that need further explanations")
