@@ -231,6 +231,25 @@ def main():
 
     # Building Team Page
     if page_selection == "Team Profile":
+        st.write("Contact Details")
+        st.info("contact us for inquiries and one of our wonderfull consultands will attend to you as soon as possible")
+        st.write("avilability of stuff to answer your calls", "during the week mon to friday is between 8:00 and 18:00", "and during the Weekends is between 8:00 and 13:00")
+        
+        st.image("https://www.seekpng.com/png/full/420-4208722_contactusbanner-contact-us-banner-images-png.png")
+        st.info("Mail - TeamCB7@gmail.com")
+        st.write("facebook - ClubCB7")
+        st.write("Tweeter - @TEAMCB7")
+        st.write("whatsap - 0814466788")
+        st.write("mobile - 0792233448")
+        if st.checkbox("check availability of staff"):
+            st.write("monday - 08:00 to 18:00")
+            st.write("Tuesday - 08:00 to 18:00 ")
+            st.write("wednesday - 08:00 to 18:00")
+            st.write("Thursday - 08:00 to 18:00")
+            st.write("friday - 08:00 to 18:00")
+            st.info("weekends - 08:00 to 13:00")
+        st.image("https://i.pinimg.com/originals/e6/d2/27/e6d22708bcabc0b47b837a5da9794df0.gif")
+        
         #Team name
         st.title("Team CB7")
         st.write("Team CB7 is an elite group of data scientists all who are dedicated in making all types of recommendation systems that will benefit the en-user of this app thier own setisfation with guaranteed results")
